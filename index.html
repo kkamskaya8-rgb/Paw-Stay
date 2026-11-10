@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+  <meta name="description" content="PawStay — Trusted pet sitting across Costa del Sol. Verified local sitters in Marbella, Estepona, Mijas and Nueva Andalucía. Home boarding, day care, dog walking from €30/night.">
+  <meta name="keywords" content="pet sitter Marbella, pet sitter Nueva Andalucía, dog sitter Costa del Sol, cat sitter Marbella, home boarding Marbella, pet sitting Estepona, dog walking Mijas, Pawstay">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.pawstay.es">
+  <meta property="og:title" content="PawStay — Pet Sitting Across Costa del Sol">
+  <meta property="og:description" content="Trusted local sitters for your dog, cat or small animal. Verified, home-based care in Marbella, Estepona, Mijas and Nueva Andalucía. From 30 euros per night.">
+  <meta property="og:image" content="https://www.pawstay.es/og-image.jpg">
+  <meta property="og:site_name" content="PawStay">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PawStay — Pet Sitting Across Costa del Sol">
+  <meta name="twitter:description" content="Trusted local sitters. Verified, home-based care. From 30 euros per night.">
+  <link rel="canonical" href="https://www.pawstay.es">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>PawStay — Your pet's home away from home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--green:#1a6b4a;--green-light:#2d9467;--green-pale:#e8f5ee;--green-mid:#c5e8d4;--sand:#f7f4ef;--sand-dark:#ede8e0;--text:#1c1c1c;--text-mid:#555;--text-soft:#6b6b6b;--white:#fff;--radius:14px;--radius-lg:20px;--shadow:0 2px 20px rgba(26,107,74,.08);--shadow-lg:0 8px 40px rgba(26,107,74,.13)}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--sand);color:var(--text);line-height:1.6;overflow-x:hidden}
+[data-lang]{display:none}
+body.lang-en [data-lang="en"],body.lang-es [data-lang="es"],body.lang-ru [data-lang="ru"],body.lang-de [data-lang="de"]{display:inline}
+.lang-bar{background:#0e3a27;padding:6px 5%;display:flex;justify-content:flex-end;gap:8px;align-items:center}
+.lang-btn{background:none;border:1px solid rgba(255,255,255,.25);color:rgba(255,255,255,.6);font-size:11px;padding:3px 10px;border-radius:10px;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s}
+.lang-btn.active,.lang-btn:hover{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.5)}
+nav{position:sticky;top:0;z-index:100;background:rgba(247,244,239,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--sand-dark);padding:0 5%;height:68px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-icon{width:36px;height:36px;background:var(--green);border-radius:10px;display:flex;align-items:center;justify-content:center}
+.nav-logo-icon svg{width:20px;height:20px;fill:none;stroke:#fff;stroke-width:2}
+.nav-logo-text{font-family:'Lora',serif;font-size:20px;font-weight:600;color:var(--green)}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{text-decoration:none;color:var(--text-mid);font-size:13px;transition:color .2s}
+.nav-links a:hover{color:var(--green)}
+.nav-cta{background:var(--green);color:#fff;padding:9px 20px;border-radius:30px;font-size:13px;font-weight:500;text-decoration:none;transition:background .2s}
+.nav-cta:hover{background:var(--green-light)}
+.nav-mobile-toggle{display:none;background:none;border:none;cursor:pointer;font-size:22px}
+.hero{min-height:100vh;display:flex;align-items:center;padding:100px 5% 80px;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 70% 40%,var(--green-pale),var(--sand) 70%);z-index:0}
+.hero-blob{position:absolute;top:-80px;right:-120px;width:600px;height:600px;background:var(--green-mid);border-radius:60% 40% 70% 30%/40% 60% 40% 60%;opacity:.3;z-index:0;animation:blob 8s ease-in-out infinite}
+@keyframes blob{0%,100%{transform:scale(1) rotate(0deg)}50%{transform:scale(1.05) rotate(4deg)}}
+.hero-content{position:relative;z-index:1;max-width:580px}
+.hero-tag{display:inline-flex;align-items:center;gap:7px;background:var(--green-pale);border:1px solid var(--green-mid);color:var(--green);font-size:12px;font-weight:500;padding:5px 14px;border-radius:20px;margin-bottom:24px}
+.hero-tag-dot{width:7px;height:7px;background:var(--green);border-radius:50%;animation:pulse 2s ease infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
+.hero h1{font-family:'Lora',serif;font-size:clamp(36px,5vw,56px);font-weight:600;line-height:1.15;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--green)}
+.hero p{font-size:16px;color:var(--text-mid);font-weight:300;max-width:440px;margin-bottom:36px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{background:var(--green);color:#fff;padding:13px 26px;border-radius:30px;font-size:15px;font-weight:500;text-decoration:none;border:none;cursor:pointer;transition:background .2s,transform .15s;display:inline-block}
+.btn-primary:hover{background:var(--green-light);transform:translateY(-2px)}
+.btn-outline{background:transparent;color:var(--green);padding:13px 26px;border-radius:30px;font-size:15px;font-weight:500;text-decoration:none;border:1.5px solid var(--green);cursor:pointer;transition:all .2s;display:inline-block}
+.btn-outline:hover{background:var(--green-pale)}
+.hero-stats{display:flex;gap:32px;margin-top:48px}
+.hero-stat-num{font-family:'Lora',serif;font-size:26px;font-weight:600;color:var(--green)}
+.hero-stat-label{font-size:12px;color:var(--text-soft);margin-top:2px}
+.hero-card{position:absolute;right:5%;top:50%;transform:translateY(-50%);z-index:1;width:340px;background:#fff;border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-lg)}
+.hcf-top{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.hcf-avatar{width:46px;height:46px;border-radius:50%;background:var(--green-mid);display:flex;align-items:center;justify-content:center;font-size:22px}
+.hcf-name{font-weight:500;font-size:14px}
+.hcf-loc{font-size:12px;color:var(--text-soft)}
+.hcf-quote{font-size:13px;color:var(--text-mid);font-style:italic;font-family:'Lora',serif;line-height:1.6;border-left:3px solid var(--green-mid);padding-left:12px}
+.hcf-tags{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap}
+.hcf-tag{font-size:11px;background:var(--green-pale);color:var(--green);padding:3px 9px;border-radius:8px}
+.hcf-badge{background:var(--green);color:#fff;border-radius:10px;padding:10px 14px;margin-top:12px;display:flex;align-items:center;gap:8px;font-size:13px;font-weight:500}
+.trust-bar{background:var(--green);padding:12px 5%;display:flex;justify-content:center;gap:36px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;color:#fff;font-size:13px}
+.trust-item svg{width:16px;height:16px;stroke:#a8d8c0;fill:none;stroke-width:2;flex-shrink:0}
+section{padding:76px 5%}
+.section-tag{font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
+.section-title{font-family:'Lora',serif;font-size:clamp(26px,3.5vw,38px);font-weight:600;line-height:1.2;margin-bottom:14px}
+.section-subtitle{font-size:15px;color:var(--text-mid);font-weight:300;max-width:520px}
+.how-it-works{background:var(--white)}
+.hiw-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px;margin-top:48px}
+.hiw-num{font-family:'Lora',serif;font-size:50px;font-weight:600;color:var(--green-mid);line-height:1;margin-bottom:6px}
+.hiw-icon{width:50px;height:50px;background:var(--green-pale);border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.hiw-icon svg{width:23px;height:23px;stroke:var(--green);fill:none;stroke-width:1.8}
+.hiw-step h3{font-family:'Lora',serif;font-size:17px;font-weight:600;margin-bottom:7px}
+.hiw-step p{font-size:14px;color:var(--text-mid);line-height:1.7}
+.services{background:var(--sand)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.service-card{background:var(--white);border-radius:var(--radius-lg);padding:26px;border:1px solid transparent;transition:all .3s;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.service-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--green-pale),transparent);opacity:0;transition:opacity .3s}
+.service-card:hover{border-color:var(--green-mid);transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.service-card:hover::before{opacity:1}
+.service-icon{width:52px;height:52px;background:var(--green-pale);border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;position:relative;z-index:1}
+.service-icon svg{width:24px;height:24px;stroke:var(--green);fill:none;stroke-width:1.8}
+.service-card h3{font-family:'Lora',serif;font-size:17px;font-weight:600;margin-bottom:7px;position:relative;z-index:1}
+.service-card p{font-size:13px;color:var(--text-mid);line-height:1.7;margin-bottom:14px;position:relative;z-index:1}
+.service-price{font-size:21px;font-weight:500;color:var(--green);position:relative;z-index:1}
+.service-price span{font-size:13px;color:var(--text-soft);font-weight:400}
+.service-features{margin-top:12px;position:relative;z-index:1}
+.service-feature{font-size:13px;color:var(--text-mid);padding:3px 0;display:flex;align-items:center;gap:7px}
+.service-feature::before{content:'✓';color:var(--green);font-weight:600;font-size:12px}
+.areas{background:var(--white)}
+.areas-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:48px}
+.map-container{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid var(--sand-dark);height:440px}
+#pawstay-map{width:100%;height:100%}
+.booking-section{background:var(--sand)}
+.booking-wrapper{max-width:620px;margin:48px auto 0;background:var(--white);border-radius:var(--radius-lg);padding:34px;border:1px solid var(--sand-dark);box-shadow:var(--shadow)}
+.booking-steps{display:flex;margin-bottom:30px;position:relative}
+.booking-steps::after{content:'';position:absolute;top:17px;left:9%;right:9%;height:2px;background:var(--sand-dark);z-index:0}
+.bstep{flex:1;text-align:center;position:relative;z-index:1}
+.bstep-circle{width:34px;height:34px;border-radius:50%;background:var(--sand-dark);color:var(--text-soft);font-size:13px;font-weight:500;display:flex;align-items:center;justify-content:center;margin:0 auto 7px;transition:all .3s}
+.bstep.active .bstep-circle{background:var(--green);color:#fff}
+.bstep.done .bstep-circle{background:var(--green-mid);color:var(--green)}
+.bstep-label{font-size:11px;color:var(--text-soft)}
+.bstep.active .bstep-label{color:var(--green);font-weight:500}
+.booking-form{display:none}
+.booking-form.active{display:block}
+.form-group{margin-bottom:18px}
+.form-label{font-size:13px;font-weight:500;margin-bottom:7px;display:block}
+.form-input,.form-select,.form-textarea{width:100%;padding:11px 15px;border:1.5px solid var(--sand-dark);border-radius:var(--radius);background:var(--sand);font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border-color .2s}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--green);background:#fff}
+.form-textarea{resize:vertical;min-height:90px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pet-types{display:flex;gap:8px;flex-wrap:wrap}
+.pet-type-btn{padding:8px 16px;border:1.5px solid var(--sand-dark);border-radius:30px;background:var(--white);font-size:13px;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
+.pet-type-btn.selected{border-color:var(--green);background:var(--green-pale);color:var(--green);font-weight:500}
+.booking-nav{display:flex;justify-content:space-between;margin-top:24px;align-items:center}
+.btn-back{background:none;border:1.5px solid var(--sand-dark);color:var(--text-mid);padding:10px 20px;border-radius:30px;font-size:14px;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
+.btn-back:hover{border-color:var(--green);color:var(--green)}
+.booking-note{font-size:12px;color:var(--text-soft);text-align:center;margin-top:14px}
+.sitters{background:var(--sand)}
+.faq{background:var(--white)}
+.faq-list{max-width:660px;margin:48px auto 0}
+.faq-item{border-bottom:1px solid var(--sand-dark)}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:18px 0;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq-q svg{width:19px;height:19px;stroke:var(--green);fill:none;stroke-width:2;flex-shrink:0;transition:transform .3s}
+.faq-item.open .faq-q svg{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:18px}
+.faq-a p{font-size:14px;color:var(--text-mid);line-height:1.75}
+footer{background:#0e3a27;color:rgba(255,255,255,.7);padding:52px 5% 28px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:40px}
+.footer-brand p{font-size:13px;line-height:1.7;max-width:250px;margin-top:10px}
+.footer-col h4{font-size:13px;font-weight:500;color:#fff;margin-bottom:14px}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:9px}
+.footer-col a{font-size:13px;color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s}
+.footer-col a:hover{color:#a8d8c0}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.footer-bottom p{font-size:12px}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s;padding:20px}
+.modal-overlay.open{opacity:1;pointer-events:all}
+.modal{background:var(--white);border-radius:var(--radius-lg);padding:34px;max-width:460px;width:100%;position:relative;transform:translateY(20px);transition:transform .3s;max-height:90vh;overflow-y:auto}
+.modal-overlay.open .modal{transform:translateY(0)}
+.modal-close{position:absolute;top:14px;right:14px;background:var(--sand);border:none;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:17px;color:var(--text-mid);display:flex;align-items:center;justify-content:center}
+.success-msg{text-align:center;padding:16px 0}
+.success-icon{width:60px;height:60px;background:var(--green-pale);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:26px}
+.success-msg h3{font-family:'Lora',serif;font-size:20px;margin-bottom:7px}
+.success-msg p{font-size:14px;color:var(--text-mid);line-height:1.7}
+.reveal{opacity:1;transform:translateY(0);transition:opacity .6s ease,transform .6s ease}
+@media(max-width:900px){.hero-card{display:none}
+.footer-grid{grid-template-columns:1fr 1fr}
+.areas-layout{grid-template-columns:1fr}
+.map-container{height:300px}
+.services-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.nav-links,.nav-cta{display:none}
+.nav-mobile-toggle{display:block}
+.hero-stats{gap:20px}
+.form-row{grid-template-columns:1fr}
+.trust-bar{gap:16px;justify-content:flex-start}
+.services-grid{grid-template-columns:1fr}}
+.calculator{background:var(--white)}
+.calc-card{max-width:680px;margin:48px auto 0;background:var(--sand);border-radius:var(--radius-lg);padding:34px;border:1px solid var(--sand-dark)}
+.calc-services{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:24px}
+.calc-service-btn{padding:12px 10px;border:1.5px solid var(--sand-dark);border-radius:var(--radius);background:var(--white);font-size:13px;cursor:pointer;transition:all .2s;text-align:center;font-family:'DM Sans',sans-serif;line-height:1.4}
+.calc-service-btn.selected{border-color:var(--green);background:var(--green-pale);color:var(--green);font-weight:500}
+.calc-service-btn small{display:block;font-size:11px;color:var(--text-soft);font-weight:400;margin-top:3px}
+.calc-service-btn.selected small{color:var(--green-light)}
+.calc-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px}
+.calc-quantity{display:flex;align-items:center;border:1.5px solid var(--sand-dark);border-radius:var(--radius);overflow:hidden;background:var(--white)}
+.calc-qty-btn{width:40px;height:44px;border:none;background:var(--sand);color:var(--green);font-size:20px;cursor:pointer;transition:background .15s}
+.calc-qty-btn:hover{background:var(--green-pale)}
+.calc-qty-val{flex:1;text-align:center;font-size:16px;font-weight:500;color:var(--text)}
+.calc-addons{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.calc-addon{padding:7px 14px;border:1.5px solid var(--sand-dark);border-radius:20px;background:var(--white);font-size:12px;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
+.calc-addon.active{border-color:var(--green);background:var(--green-pale);color:var(--green)}
+.calc-result{background:var(--green);border-radius:var(--radius);padding:22px 26px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.calc-result-label{color:rgba(255,255,255,.8);font-size:14px;margin-bottom:4px}
+.calc-result-price{font-family:'Lora',serif;font-size:40px;font-weight:600;color:#fff}
+.calc-result-breakdown{font-size:12px;color:rgba(255,255,255,.7);margin-top:4px}
+.cal-sitter-btn{padding:8px 16px;border:1.5px solid var(--sand-dark);border-radius:20px;background:var(--white);font-size:13px;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
+.cal-sitter-btn.active{border-color:var(--green);background:var(--green-pale);color:var(--green);font-weight:500}
+.blog-modal{background:var(--white);border-radius:var(--radius-lg);max-width:720px;width:100%;margin:auto;position:relative;transform:translateY(20px);transition:transform .3s}
+@media(max-width:900px){.calc-row{grid-template-columns:1fr}}
+@media(max-width:640px){.calc-services{grid-template-columns:repeat(2,1fr)}}
+.sticky-bar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #ede8e0;padding:12px 5%;display:flex;align-items:center;justify-content:space-between;z-index:999;transform:translateY(100%);transition:transform .3s ease;box-shadow:0 -4px 24px rgba(0,0,0,.08)}
+.sticky-bar.visible{transform:translateY(0)}
+.sticky-bar-left{display:flex;align-items:center;gap:10px}
+.sticky-bar-title{font-family:'Lora',serif;font-size:15px;font-weight:600;color:var(--text)}
+.sticky-bar-sub{font-size:12px;color:var(--text-soft)}
+@media(max-width:600px){.sticky-bar-sub{display:none}}
+.cookie-banner{position:fixed;bottom:0;left:0;right:0;background:#1c2b22;color:#fff;padding:18px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;z-index:9999;transform:translateY(0);transition:transform .4s ease;box-shadow:0 -4px 24px rgba(0,0,0,.15)}
+.cookie-banner.visible{transform:translateY(0)}
+.cookie-banner p{font-size:13px;color:rgba(255,255,255,.8);line-height:1.6;margin:0;flex:1;min-width:220px}
+.cookie-banner p a{color:#a8d8c0;text-decoration:underline}
+.cookie-banner-btns{display:flex;gap:10px;flex-shrink:0;flex-wrap:wrap}
+.cookie-accept{background:#1a6b4a;color:#fff;border:none;padding:10px 22px;border-radius:20px;font-size:13px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif}
+.cookie-decline{background:rgba(255,255,255,.1);color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.15);padding:10px 22px;border-radius:20px;font-size:13px;cursor:pointer;font-family:'DM Sans',sans-serif}
+.cookie-accept:hover{background:#2d9467}
+.cookie-decline:hover{background:rgba(255,255,255,.15)}
+.policy-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:99999;display:none;align-items:center;justify-content:center;padding:20px}
+.policy-overlay.open{display:flex}
+.policy-modal{background:#fff;border-radius:var(--radius-lg);max-width:680px;width:100%;max-height:85vh;display:flex;flex-direction:column;overflow:hidden}
+.policy-modal-header{padding:24px 28px 16px;border-bottom:1px solid var(--sand-dark);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.policy-modal-header h2{font-family:'Lora',serif;font-size:20px;font-weight:600;color:var(--text);margin:0}
+.policy-modal-body{padding:24px 28px;overflow-y:auto;line-height:1.8;font-size:14px;color:var(--text-mid)}
+.policy-modal-body h3{font-family:'Lora',serif;font-size:16px;font-weight:600;color:var(--text);margin:20px 0 8px}
+.policy-modal-body p{margin-bottom:12px}
+.policy-modal-body ul{padding-left:20px;margin-bottom:12px}
+.policy-modal-body li{margin-bottom:6px}
+.skip-link{position:absolute;left:-9999px;top:0;background:#1a6b4a;color:#fff;padding:10px 16px;border-radius:0 0 10px 0;z-index:100000;font-size:14px}
+.skip-link:focus{left:0}
+.service-price.on-request span{font-size:21px;color:var(--green);font-weight:500}
+
+/* ===== WHATSAPP FLOATING BUTTON ===== */
+.wa-fab{position:fixed;right:18px;bottom:18px;z-index:900;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;text-decoration:none;border-radius:34px;padding:0 20px 0 16px;height:56px;box-shadow:0 6px 22px rgba(0,0,0,.22);font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;transition:bottom .25s ease,transform .15s ease,box-shadow .15s ease}
+.wa-fab:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.28)}
+.wa-fab:focus-visible{outline:3px solid #fff;outline-offset:2px;box-shadow:0 0 0 5px #128C7E}
+.wa-fab svg{width:28px;height:28px;fill:#fff;flex-shrink:0}
+@media(max-width:640px){.wa-fab{padding:0;width:56px;justify-content:center;right:14px}.wa-fab .wa-fab-label{display:none}}
+@media print{.wa-fab{display:none}}
+
+/* ===== MOBILE + ACCESSIBILITY POLISH ===== */
+@media(max-width:760px){
+  .stack-m{grid-template-columns:1fr !important;gap:28px !important}
+  .lang-btn{padding:9px 13px;font-size:12px}
+  .nav-mobile-toggle{min-width:44px;min-height:44px;font-size:24px}
+  .calc-addon{padding:11px 16px}
+  .spot-apply{display:inline-block;padding:12px 8px}
+  .pet-type-btn{min-height:42px}
+  #wa-book-link{display:inline-block;padding:10px 4px}
+}
+.calc-services{display:flex !important;flex-wrap:wrap;gap:10px;justify-content:center}
+.calc-service-btn{flex:1 1 150px;max-width:220px}
+@media(max-width:640px){.calc-service-btn{flex:1 1 calc(50% - 5px);max-width:none}}
+.calc-service-btn.selected small{color:var(--green) !important}
+</style>
+  <!-- GOOGLE ANALYTICS: When ready, paste your gtag.js snippet here -->
+  <meta name="theme-color" content="#1a6b4a">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"PawStay","legalName":"PAW STAY S.L.","url":"https://www.pawstay.es","description":"Pet sitting marketplace connecting pet owners with vetted local sitters in Marbella, Estepona, Mijas and Nueva Andalucía (Costa del Sol): home boarding, day care, dog walking and home visits.","email":"kkamskaya8@gmail.com","telephone":"+421908988260","areaServed":["Marbella","Estepona","Mijas","Nueva Andalucía"],"knowsLanguage":["en","es","ru","de"]}</script>
+</head>
+<body class="lang-en">
+<a class="skip-link" href="#how-it-works">Skip to content</a>
+<noscript><div style="background:#fdf3e0;color:#7a4a00;padding:14px 5%;font-family:sans-serif;font-size:14px;text-align:center">PawStay works best with JavaScript enabled. To book or ask a question, email <a href="mailto:kkamskaya8@gmail.com">kkamskaya8@gmail.com</a> or WhatsApp <a href="https://wa.me/421908988260">+421 908 988 260</a>.</div></noscript>
+
+<div class="lang-bar">
+  <span style="font-size:11px;color:rgba(255,255,255,.4);margin-right:4px">🌐</span>
+  <button class="lang-btn active" onclick="setLang('en')">EN</button>
+  <button class="lang-btn" onclick="setLang('es')">ES</button>
+  <button class="lang-btn" onclick="setLang('ru')">RU</button>
+  <button class="lang-btn" onclick="setLang('de')">DE</button>
+</div>
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon"><svg viewBox="0 0 24 24"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/><path d="M16 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/><path d="M5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/><path d="M19 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/><path d="M12 20c2.5 0 5-2 6-5H6c1 3 3.5 5 6 5z"/></svg></div>
+    <span class="nav-logo-text">PawStay</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#how-it-works"><span data-lang="en">How it works</span><span data-lang="es">Cómo funciona</span><span data-lang="ru">Как это работает</span><span data-lang="de">Wie es funktioniert</span></a></li>
+    <li><a href="#sitter-directory"><span data-lang="en">Find a sitter</span><span data-lang="es">Buscar cuidador</span><span data-lang="ru">Найти ситтера</span><span data-lang="de">Sitter finden</span></a></li>
+    <li><a href="#services"><span data-lang="en">Services</span><span data-lang="es">Servicios</span><span data-lang="ru">Услуги</span><span data-lang="de">Services</span></a></li>
+    <li><a href="#areas"><span data-lang="en">Areas</span><span data-lang="es">Zonas</span><span data-lang="ru">Районы</span><span data-lang="de">Gebiete</span></a></li>
+    <li><a href="#earn-with-us"><span data-lang="en">Become a sitter</span><span data-lang="es">Ser cuidador</span><span data-lang="ru">Стать ситтером</span><span data-lang="de">Sitter werden</span></a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>  <a href="#book" class="nav-cta"><span data-lang="en">Book now</span><span data-lang="es">Reservar</span><span data-lang="ru">Записаться</span><span data-lang="de">Buchen</span></a>
+  <button class="nav-mobile-toggle" onclick="toggleMobileMenu()">☰</button>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-bg"></div><div class="hero-blob"></div>
+  <div class="hero-content">
+    <div class="hero-tag"><div class="hero-tag-dot"></div>
+<span data-lang="en">Marbella · Estepona · Mijas · Nueva Andalucía</span><span data-lang="es">Marbella · Estepona · Mijas · Nueva Andalucía</span><span data-lang="ru">Марбелья · Эстепона · Михас · Нуэва-Андалусия</span><span data-lang="de">Marbella · Estepona · Mijas · Nueva Andalucía</span>
+</div>
+    <h1>
+      <span data-lang="en">Your pet's home<br/><em>away from home</em></span><span data-lang="de">Ein Zuhause auf Zeit<br/><em>für dein Tier</em></span>
+      <span data-lang="es">El hogar de tu mascota<br/><em>lejos de casa</em></span>
+      <span data-lang="ru">Дом для вашего питомца<br/><em>вдали от дома</em></span>
+    </h1>
+    <p>
+      <span data-lang="en">Vetted, trusted local sitters across Costa del Sol. Book online in minutes.</span><span data-lang="de">Geprüfte, vertrauenswürdige Sitter an der Costa del Sol. In wenigen Minuten online buchen.</span>
+      <span data-lang="es">Cuidadores locales verificados en toda la Costa del Sol. Reserva en minutos.</span>
+      <span data-lang="ru">Проверенные местные ситтеры по всей Коста-дель-Соль. Запись онлайн за минуты.</span>
+    </p>
+    <div class="hero-actions">
+      <a href="#book" class="btn-primary"><span data-lang="en">Find a sitter</span><span data-lang="es">Buscar cuidador</span><span data-lang="ru">Найти ситтера</span><span data-lang="de">Sitter finden</span></a>
+      <a href="#how-it-works" class="btn-outline"><span data-lang="en">How it works</span><span data-lang="es">Cómo funciona</span><span data-lang="ru">Как это работает</span><span data-lang="de">So funktioniert's</span></a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="hero-stat-num">100%</div><div class="hero-stat-label"><span data-lang="en">Personally vetted sitters</span><span data-lang="es">Cuidadores verificados personalmente</span><span data-lang="ru">Ситтеры лично проверены</span><span data-lang="de">Persönlich geprüfte Sitter</span></div></div>
+      <div><div class="hero-stat-num"><span data-lang="en">Free</span><span data-lang="es">Gratis</span><span data-lang="ru">Бесплатно</span><span data-lang="de">Gratis</span></div><div class="hero-stat-label"><span data-lang="en">Meet &amp; greet first</span><span data-lang="es">Encuentro previo</span><span data-lang="ru">Знакомство до брони</span><span data-lang="de">Kennenlernen vorab</span></div></div>
+      <div><div class="hero-stat-num">€30</div><div class="hero-stat-label"><span data-lang="en">Home boarding / night</span><span data-lang="es">Alojamiento / noche</span><span data-lang="ru">Передержка / ночь</span><span data-lang="de">Boarding / Nacht</span></div></div>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div style="display:inline-block;background:#fdf3e0;color:#a06000;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:4px 10px;border-radius:8px;margin-bottom:12px"><span data-lang="en">Sample daily update</span><span data-lang="es">Ejemplo de actualización diaria</span><span data-lang="ru">Пример ежедневного отчёта</span><span data-lang="de">Beispiel Tages-Update</span></div>
+    <div class="hcf-top"><div class="hcf-avatar">🐕</div><div><div class="hcf-name"><span data-lang="en">Buddy is having a great time!</span><span data-lang="es">¡Buddy lo está pasando genial!</span><span data-lang="ru">Бадди отлично проводит время!</span><span data-lang="de">Buddy hat eine tolle Zeit!</span></div><div class="hcf-loc"><span data-lang="en">From your sitter</span><span data-lang="es">De tu cuidador</span><span data-lang="ru">От вашего ситтера</span><span data-lang="de">Von deinem Sitter</span></div></div></div>
+    
+    <div class="hcf-quote"><span data-lang="en">"Buddy had a lovely walk this morning and is now napping on the sofa. 🐾"</span><span data-lang="es">"Buddy ha dado un paseo estupendo esta mañana y ahora duerme en el sofá. 🐾"</span><span data-lang="ru">"Бадди отлично погулял утром и теперь дремлет на диване. 🐾"</span><span data-lang="de">"Buddy hatte heute Morgen einen schönen Spaziergang und schläft jetzt auf dem Sofa. 🐾"</span></div>
+    <div class="hcf-tags"><div class="hcf-tag">🏠 <span data-lang="en">Home boarding</span><span data-lang="es">Alojamiento</span><span data-lang="ru">Передержка</span><span data-lang="de">Boarding</span></div><div class="hcf-tag">📸 <span data-lang="en">Daily photos</span><span data-lang="es">Fotos diarias</span><span data-lang="ru">Фото каждый день</span><span data-lang="de">Tägliche Fotos</span></div><div class="hcf-tag">✅ <span data-lang="en">Vetted sitter</span><span data-lang="es">Cuidador verificado</span><span data-lang="ru">Проверенный ситтер</span><span data-lang="de">Geprüfter Sitter</span></div></div>
+    <div class="hcf-badge">🔔 <span data-lang="en">Booking confirmed · Dec 22–Jan 3</span><span data-lang="es">Reserva confirmada · 22 dic–3 ene</span><span data-lang="ru">Бронь подтверждена · 22 дек–3 янв</span><span data-lang="de">Buchung bestätigt · 22. Dez.–3. Jan.</span></div>
+  </div>
+</section>
+
+
+<div class="trust-bar">
+  <div class="trust-item"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span data-lang="en">Free meet & greet before booking</span><span data-lang="es">Encuentro previo gratuito</span><span data-lang="ru">Бесплатное знакомство до брони</span><span data-lang="de">Kostenloses Kennenlernen vorab</span></div>
+  <div class="trust-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg><span data-lang="en">Background-checked sitters</span><span data-lang="es">Cuidadores con antecedentes verificados</span><span data-lang="ru">Ситтеры с проверкой биографии</span><span data-lang="de">Überprüfte Sitter</span></div>
+  <div class="trust-item"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span data-lang="en">Request online, any time</span><span data-lang="es">Solicita en línea a cualquier hora</span><span data-lang="ru">Заявка онлайн в любое время</span><span data-lang="de">Online anfragen, jederzeit</span></div>
+  <div class="trust-item"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span data-lang="en">Real home environments</span><span data-lang="es">Entorno familiar real</span><span data-lang="ru">Настоящий домашний уют</span><span data-lang="de">Echtes Zuhause</span></div>
+  <div class="trust-item"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg><span data-lang="en">Daily photo updates</span><span data-lang="es">Fotos diarias</span><span data-lang="ru">Фото каждый день</span><span data-lang="de">Tägliche Fotos</span></div>
+</div>
+
+
+
+
+
+<section class="how-it-works" id="how-it-works">
+  <div class="section-tag"><span data-lang="en">How it works</span><span data-lang="es">Cómo funciona</span><span data-lang="ru">Как это работает</span><span data-lang="de">Wie es funktioniert</span></div>
+  <h2 class="section-title"><span data-lang="en">Three steps to peace of mind</span><span data-lang="es">Tres pasos para tu tranquilidad</span><span data-lang="ru">Три шага к спокойствию</span><span data-lang="de">Drei Schritte zur Sicherheit</span></h2>
+  <div class="hiw-grid">
+    <div class="hiw-step">
+      <div class="hiw-num">01</div>
+      <div class="hiw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
+      <h3><span data-lang="en">Tell us what you need</span><span data-lang="es">Cuéntanos qué necesitas</span><span data-lang="ru">Расскажите, что вам нужно</span><span data-lang="de">Sag uns was du brauchst</span></h3>
+      <p><span data-lang="en">Share your location, dates and pet. We personally match you with vetted local sitters near you.</span><span data-lang="es">Indica tu ubicación, fechas y mascota. Te asignamos personalmente cuidadores locales verificados cerca de ti.</span><span data-lang="ru">Укажите район, даты и питомца. Мы лично подберём проверенных ситтеров рядом с вами.</span><span data-lang="de">Nenne Standort, Daten und Tier. Wir matchen dich persönlich mit geprüften Sittern in deiner Nähe.</span></p>
+    </div>
+    <div class="hiw-step">
+      <div class="hiw-num">02</div>
+      <div class="hiw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+      <h3><span data-lang="en">Free meet & greet</span><span data-lang="es">Encuentro gratuito</span><span data-lang="ru">Бесплатное знакомство</span><span data-lang="de">Kostenloses Kennenlernen</span></h3>
+      <p><span data-lang="en">Book a free meet-and-greet before committing. Make sure your pet and sitter are a perfect match.</span><span data-lang="es">Reserva un encuentro gratuito antes de comprometerte. Asegúrate de que tu mascota y el cuidador encajan perfectamente.</span><span data-lang="ru">Закажите бесплатное знакомство до подтверждения. Убедитесь, что питомец и ситтер идеально подходят друг другу.</span><span data-lang="de">Kostenloses Kennenlernen buchen bevor du dich festlegst. Stell sicher dass Tier und Sitter perfekt passen.</span></p>
+    </div>
+    <div class="hiw-step">
+      <div class="hiw-num">03</div>
+      <div class="hiw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <h3><span data-lang="en">Relax & enjoy</span><span data-lang="es">Relájate y disfruta</span><span data-lang="ru">Отдыхайте и наслаждайтесь</span><span data-lang="de">Entspannen & genießen</span></h3>
+      <p><span data-lang="en">Get daily photo and video updates while you travel. Your pet is in a loving home. Travel completely worry-free.</span><span data-lang="es">Recibe fotos y vídeos diarios mientras viajas. Tu mascota está en un hogar amoroso. Viaja sin preocupaciones.</span><span data-lang="ru">Получайте ежедневные фото и видео в путешествии. Ваш питомец в заботливых руках.</span><span data-lang="de">Tägliche Foto- und Video-Updates während du reist. Dein Tier ist in liebevollen Händen.</span></p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="services" id="services">
+  <div class="section-tag reveal"><span data-lang="en">Our services</span><span data-lang="es">Nuestros servicios</span><span data-lang="ru">Наши услуги</span><span data-lang="de">Unsere Services</span></div>
+  <h2 class="section-title reveal"><span data-lang="en">Everything your pet needs</span><span data-lang="es">Todo lo que tu mascota necesita</span><span data-lang="ru">Всё для вашего питомца</span><span data-lang="de">Alles, was dein Tier braucht</span></h2>
+  <p class="section-subtitle reveal"><span data-lang="en">From overnight stays to daily walks — request online and we match you personally.</span><span data-lang="es">Desde estancias nocturnas hasta paseos diarios — solicita en línea y te asignamos un cuidador personalmente.</span><span data-lang="ru">От ночёвок до ежедневных прогулок — отправьте заявку онлайн, и мы лично подберём ситтера.</span><span data-lang="de">Von Übernachtungen bis zu täglichen Spaziergängen — online anfragen, wir matchen dich persönlich.</span></p>
+  <div class="services-grid">
+    <div class="service-card reveal" style="transition-delay:.1s">
+      <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+      <h3><span data-lang="en">Home Boarding</span><span data-lang="es">Alojamiento</span><span data-lang="ru">Передержка</span><span data-lang="de">Heimboarding</span></h3>
+      <p><span data-lang="en">Your pet lives with a sitter in their home. Cage-free, comfortable, and full of love. Perfect for dogs, cats and small animals.</span><span data-lang="es">Tu mascota vive con el cuidador en su casa. Sin jaulas, cómodo y lleno de amor. Perfecto para perros, gatos y animales pequeños.</span><span data-lang="ru">Ваш питомец живёт у ситтера дома. Без клеток, уютно и с любовью. Идеально для собак, кошек и мелких животных.</span><span data-lang="de">Dein Tier lebt beim Sitter zuhause. Ohne Käfig, komfortabel und voller Liebe. Ideal für Hunde, Katzen und Kleintiere.</span></p>
+      <div class="service-price">€30 <span>/ <span data-lang="en">night</span><span data-lang="es">noche</span><span data-lang="ru">ночь</span><span data-lang="de">Nacht</span></span></div>
+      <div class="service-features">
+        <div class="service-feature"><span data-lang="en">Dogs, cats & small animals</span><span data-lang="es">Perros, gatos y pequeños</span><span data-lang="ru">Собаки, кошки и мелкие</span><span data-lang="de">Hunde, Katzen & Kleintiere</span></div>
+        <div class="service-feature"><span data-lang="en">Daily photo updates</span><span data-lang="es">Fotos diarias</span><span data-lang="ru">Ежедневные фото</span><span data-lang="de">Tägliche Foto-Updates</span></div>
+        <div class="service-feature"><span data-lang="en">Meet your sitter first</span><span data-lang="es">Conoce a tu cuidador antes</span><span data-lang="ru">Знакомство с ситтером заранее</span><span data-lang="de">Sitter vorab kennenlernen</span></div>
+<div class="service-feature"><span data-lang="en">Second pet +€15/night</span><span data-lang="es">Segunda mascota +€15/noche</span><span data-lang="ru">Второй питомец +€15/ночь</span><span data-lang="de">Zweites Tier +€15/Nacht</span></div>
+      </div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:.2s">
+      <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div>
+      <h3><span data-lang="en">Day Care</span><span data-lang="es">Guardería diurna</span><span data-lang="ru">Дневной уход</span><span data-lang="de">Tagesbetreuung</span></h3>
+      <p><span data-lang="en">Drop off in the morning, pick up in the evening. Your dog plays, socialises and goes on walks — 7 days a week, holidays included.</span><span data-lang="es">Deja a tu perro por la mañana y recógelo por la tarde. Juega, socializa y pasea — 7 días a la semana, festivos incluidos.</span><span data-lang="ru">Приведите утром, заберите вечером. Ваша собака играет, общается и гуляет — 7 дней в неделю, включая праздники.</span><span data-lang="de">Morgens abgeben, abends abholen. Dein Hund spielt, sozialisiert sich und geht spazieren — 7 Tage die Woche, auch feiertags.</span></p>
+      <div class="service-price">€18 <span>/ <span data-lang="en">full day</span><span data-lang="es">día completo</span><span data-lang="ru">полный день</span><span data-lang="de">ganzer Tag</span></span> &nbsp;·&nbsp; €12 <span>/ <span data-lang="en">half day</span><span data-lang="es">media jornada</span><span data-lang="ru">полдня</span><span data-lang="de">halber Tag</span></span></div>
+      <div class="service-features">
+        <div class="service-feature"><span data-lang="en">Dogs only</span><span data-lang="es">Solo perros</span><span data-lang="ru">Только собаки</span><span data-lang="de">Nur Hunde</span></div>
+<div class="service-feature"><span data-lang="en">Full day up to 10 h · half day up to 5 h</span><span data-lang="es">Día completo hasta 10 h · media jornada hasta 5 h</span><span data-lang="ru">Полный день до 10 ч · полдня до 5 ч</span><span data-lang="de">Ganzer Tag bis 10 Std. · halber Tag bis 5 Std.</span></div>
+        <div class="service-feature"><span data-lang="en">Flexible drop-off & pick-up</span><span data-lang="es">Entrega y recogida flexible</span><span data-lang="ru">Гибкое время привода и забора</span><span data-lang="de">Flexibles Bringen & Abholen</span></div>
+        <div class="service-feature"><span data-lang="en">Weekends & public holidays</span><span data-lang="es">Fines de semana y festivos</span><span data-lang="ru">Выходные и праздники</span><span data-lang="de">Wochenenden & Feiertage</span></div>
+      </div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:.3s">
+      <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M3 12h3m12 0h3M12 3v3m0 12v3"/></svg></div>
+      <h3><span data-lang="en">Dog Walking</span><span data-lang="es">Paseos</span><span data-lang="ru">Выгул собак</span><span data-lang="de">Gassigehen</span></h3>
+      <p><span data-lang="en">60-minute GPS-tracked walks. Solo or group (max 4 dogs). Route map sent after every walk.</span><span data-lang="es">Paseos de 60 min con GPS. Individual o en grupo (máx. 4 perros). Ruta enviada después de cada paseo.</span><span data-lang="ru">60-минутные прогулки с GPS. Индивидуально или в группе (макс. 4 собаки). Маршрут отправляется после каждой прогулки.</span><span data-lang="de">60-minütige GPS-Spaziergänge. Einzel oder Gruppe (max. 4 Hunde). Routenkarte nach jedem Spaziergang.</span></p>
+      <div class="service-price">€12 <span>/ <span data-lang="en">walk</span><span data-lang="es">paseo</span><span data-lang="ru">прогулка</span><span data-lang="de">Spaziergang</span></span></div>
+      <div class="service-features">
+        <div class="service-feature"><span data-lang="en">Solo or group (max 4 dogs)</span><span data-lang="es">Individual o grupo (máx. 4 perros)</span><span data-lang="ru">Индивидуально или группа (макс. 4)</span><span data-lang="de">Einzel oder Gruppe (max. 4 Hunde)</span></div>
+        <div class="service-feature"><span data-lang="en">Route map sent after walk</span><span data-lang="es">Ruta enviada después del paseo</span><span data-lang="ru">Маршрут отправляется после прогулки</span><span data-lang="de">Routenkarte nach dem Spaziergang</span></div>
+        <div class="service-feature"><span data-lang="en">Morning or afternoon slots</span><span data-lang="es">Turnos de mañana o tarde</span><span data-lang="ru">Утренние или дневные слоты</span><span data-lang="de">Morgen- oder Nachmittagsslots</span></div>
+      </div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:.4s">
+<div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><line x1="12" y1="22" x2="12" y2="12"/></svg></div>
+<h3><span data-lang="en">Home Visits</span><span data-lang="es">Visitas a domicilio</span><span data-lang="ru">Визиты на дом</span><span data-lang="de">Hausbesuche</span></h3>
+<p><span data-lang="en">A sitter from your own neighbourhood visits 1–3 times a day for about 30 minutes to feed, play and clean. Ideal for cats and small animals who prefer their own space.</span><span data-lang="es">Un cuidador de tu propio barrio te visita 1–3 veces al día durante unos 30 minutos para alimentar, jugar y limpiar. Ideal para gatos y animales pequeños que prefieren su propio espacio.</span><span data-lang="ru">Ситтер из вашего района приходит 1–3 раза в день примерно на 30 минут: покормить, поиграть и убрать. Идеально для кошек и мелких животных, которые предпочитают свой дом.</span><span data-lang="de">Ein Sitter aus deiner Nachbarschaft kommt 1–3 Mal täglich für etwa 30 Minuten zum Füttern, Spielen und Saubermachen. Ideal für Katzen und Kleintiere, die ihr eigenes Zuhause bevorzugen.</span></p>
+<div class="service-price">€15 <span>/ <span data-lang="en">visit</span><span data-lang="es">visita</span><span data-lang="ru">визит</span><span data-lang="de">Besuch</span></span></div>
+<div class="service-features">
+<div class="service-feature"><span data-lang="en">Cats, rabbits, birds & more</span><span data-lang="es">Gatos, conejos, pájaros y más</span><span data-lang="ru">Кошки, кролики, птицы и другие</span><span data-lang="de">Katzen, Kaninchen, Vögel & mehr</span></div>
+<div class="service-feature"><span data-lang="en">Feeding, litter/cage cleaning & play</span><span data-lang="es">Alimentación, limpieza de arenero/jaula y juego</span><span data-lang="ru">Кормление, уборка лотка/клетки и игры</span><span data-lang="de">Füttern, Kistchen-/Käfigreinigung & Spielen</span></div>
+<div class="service-feature"><span data-lang="en">Photo update each visit</span><span data-lang="es">Foto en cada visita</span><span data-lang="ru">Фото после каждого визита</span><span data-lang="de">Foto-Update bei jedem Besuch</span></div>
+<div class="service-feature"><span data-lang="en">Second pet +€5/visit</span><span data-lang="es">Segunda mascota +€5/visita</span><span data-lang="ru">Второй питомец +€5/визит</span><span data-lang="de">Zweites Tier +€5/Besuch</span></div>
+</div>
+</div>
+<div class="service-card reveal" style="transition-delay:.5s">
+      <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+      <h3><span data-lang="en">Pet Taxi</span><span data-lang="es">Taxi para mascotas</span><span data-lang="ru">Такси для животных</span><span data-lang="de">Tiertaxi</span></h3>
+      <p><span data-lang="en">Safe, stress-free transport to the vet, groomer or airport.</span><span data-lang="es">Transporte seguro y sin estrés al veterinario, peluquería o aeropuerto.</span><span data-lang="ru">Безопасная и спокойная перевозка к ветеринару, грумеру или в аэропорт.</span><span data-lang="de">Sicherer, stressfreier Transport zum Tierarzt, Pfleger oder Flughafen.</span></p>
+      <div class="service-price on-request"><span data-lang="en">On request</span><span data-lang="es">Consultar precio</span><span data-lang="ru">По запросу</span><span data-lang="de">Auf Anfrage</span></div>
+      <div class="service-features">
+        <div class="service-feature"><span data-lang="en">Vet, groomer & airport runs</span><span data-lang="es">Veterinario, peluquería y aeropuerto</span><span data-lang="ru">Ветеринар, грумер и аэропорт</span><span data-lang="de">Tierarzt, Pfleger & Flughafen</span></div>
+        <div class="service-feature"><span data-lang="en">Driver stays with your pet</span><span data-lang="es">El conductor se queda con tu mascota</span><span data-lang="ru">Водитель остаётся с вашим питомцем</span><span data-lang="de">Fahrer bleibt bei deinem Tier</span></div>
+<div class="service-feature"><span data-lang="en">Quoted by distance</span><span data-lang="es">Precio según distancia</span><span data-lang="ru">Цена зависит от расстояния</span><span data-lang="de">Preis nach Entfernung</span></div>
+      </div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:.6s">
+      <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+      <h3><span data-lang="en">Premium Add-ons</span><span data-lang="es">Extras premium</span><span data-lang="ru">Дополнительные услуги</span><span data-lang="de">Premium-Extras</span></h3>
+      <p><span data-lang="en">Enhance any service with extras tailored to your pet's individual needs. Medication, solo walks and more.</span><span data-lang="es">Mejora cualquier servicio con extras adaptados a las necesidades individuales de tu mascota. Medicación, paseos individuales y más.</span><span data-lang="ru">Дополните любую услугу индивидуальными опциями для вашего питомца. Медикаменты, индивидуальные прогулки и многое другое.</span><span data-lang="de">Ergänze jeden Service mit auf dein Tier zugeschnittenen Extras. Medikamente, Einzelspaziergänge und mehr.</span></p>
+      <div class="service-price">€8–10 <span>/ <span data-lang="en">add-on</span><span data-lang="es">extra</span><span data-lang="ru">услуга</span><span data-lang="de">Extra</span></span></div>
+      <div class="service-features">
+        <div class="service-feature"><span data-lang="en">Medication administration</span><span data-lang="es">Administración de medicación</span><span data-lang="ru">Введение медикаментов</span><span data-lang="de">Medikamentengabe</span></div>
+        <div class="service-feature"><span data-lang="en">Solo walks (boarding add-on)</span><span data-lang="es">Paseo individual (extra alojamiento)</span><span data-lang="ru">Индив. прогулка (доп. к передержке)</span><span data-lang="de">Einzelspaziergang (Boarding-Extra)</span></div>
+        <div class="service-feature"><span data-lang="en">Senior pet care</span><span data-lang="es">Cuidado de mascotas mayores</span><span data-lang="ru">Уход за пожилыми питомцами</span><span data-lang="de">Seniortierpflege</span></div>
+        <div class="service-feature"><span data-lang="en">Puppy/kitten experience</span><span data-lang="es">Experiencia con cachorros/gatitos</span><span data-lang="ru">Опыт с щенками/котятами</span><span data-lang="de">Welpen-/Kätzchenerfahrung</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="calculator" id="calculator">
+  <div class="section-tag"><span data-lang="en">Instant quote</span><span data-lang="es">Presupuesto instantáneo</span><span data-lang="ru">Мгновенный расчёт</span><span data-lang="de">Sofortangebot</span></div>
+  <h2 class="section-title"><span data-lang="en">Price calculator</span><span data-lang="es">Calculadora de precios</span><span data-lang="ru">Калькулятор цен</span><span data-lang="de">Preisrechner</span></h2>
+  <p class="section-subtitle"><span data-lang="en">Pick your service and see the price instantly — no surprises.</span><span data-lang="es">Elige tu servicio y ve el precio al instante, sin sorpresas.</span><span data-lang="ru">Выберите услугу и сразу узнайте цену — никаких сюрпризов.</span><span data-lang="de">Wähle deine Leistung und sieh den Preis sofort – keine Überraschungen.</span></p>
+  <div class="calc-card">
+    <div class="form-label" style="margin-bottom:12px"><span data-lang="en">Select service</span><span data-lang="es">Selecciona servicio</span><span data-lang="ru">Выберите услугу</span><span data-lang="de">Leistung wählen</span></div>
+    <div class="calc-services" id="calc-services">
+      <button class="calc-service-btn selected" data-price="30" data-unit="night" onclick="calcSelectService(this)"><span data-lang="en">🏠 Home Boarding<br><small>€30/night</small></span><span data-lang="es">🏠 Alojamiento<br><small>€30/noche</small></span><span data-lang="ru">🏠 Передержка<br><small>€30/ночь</small></span><span data-lang="de">🏠 Boarding<br><small>€30/Nacht</small></span></button>
+      <button class="calc-service-btn" data-price="18" data-unit="day" onclick="calcSelectService(this)"><span data-lang="en">☀️ Day Care · full day<br><small>€18/day · up to 10 h</small></span><span data-lang="es">☀️ Guardería · día completo<br><small>€18/día · hasta 10 h</small></span><span data-lang="ru">☀️ Дневной уход · полный день<br><small>€18/день · до 10 ч</small></span><span data-lang="de">☀️ Tagesbetreuung · ganzer Tag<br><small>€18/Tag · bis 10 Std.</small></span></button>
+<button class="calc-service-btn" data-price="12" data-unit="halfday" onclick="calcSelectService(this)"><span data-lang="en">🌤️ Day Care · half day<br><small>€12 · up to 5 h</small></span><span data-lang="es">🌤️ Guardería · media jornada<br><small>€12 · hasta 5 h</small></span><span data-lang="ru">🌤️ Дневной уход · полдня<br><small>€12 · до 5 ч</small></span><span data-lang="de">🌤️ Tagesbetreuung · halber Tag<br><small>€12 · bis 5 Std.</small></span></button>
+      <button class="calc-service-btn" data-price="12" data-unit="walk" onclick="calcSelectService(this)"><span data-lang="en">🦮 Dog Walking<br><small>€12/walk</small></span><span data-lang="es">🦮 Paseos<br><small>€12/paseo</small></span><span data-lang="ru">🦮 Выгул<br><small>€12/прогулка</small></span><span data-lang="de">🦮 Gassigehen<br><small>€12/Spaziergang</small></span></button>
+<button class="calc-service-btn" data-price="15" data-unit="visit" onclick="calcSelectService(this)"><span data-lang="en">🏡 Home Visits<br><small>€15/visit</small></span><span data-lang="es">🏡 Visitas<br><small>€15/visita</small></span><span data-lang="ru">🏡 Визиты<br><small>€15/визит</small></span><span data-lang="de">🏡 Hausbesuche<br><small>€15/Besuch</small></span></button>
+      
+      
+    </div>
+    <div class="calc-row">
+      <div>
+        <div class="form-label" style="margin-bottom:10px"><span data-lang="en">Number of</span><span data-lang="es">Número de</span><span data-lang="ru">Количество</span><span data-lang="de">Anzahl</span> <span id="calc-unit-label">nights</span></div>
+        <div class="calc-quantity"><button class="calc-qty-btn" onclick="calcQty(-1)">−</button><div class="calc-qty-val" id="calc-qty">3</div><button class="calc-qty-btn" onclick="calcQty(1)">+</button></div>
+      </div>
+      <div>
+        <div class="form-label" style="margin-bottom:10px"><span data-lang="en">Number of pets</span><span data-lang="es">Número de mascotas</span><span data-lang="ru">Количество питомцев</span><span data-lang="de">Anzahl Tiere</span></div>
+        <div class="calc-quantity"><button class="calc-qty-btn" onclick="calcPets(-1)">−</button><div class="calc-qty-val" id="calc-pets">1</div><button class="calc-qty-btn" onclick="calcPets(1)">+</button></div>
+      </div>
+    </div>
+    <p style="font-size:12px;color:var(--text-soft);margin:-6px 0 18px;line-height:1.5"><span data-lang="en">Extra pets in the same home: boarding +€15 per night, home visits +€5 per visit.</span><span data-lang="es">Mascotas adicionales en el mismo hogar: alojamiento +€15 por noche, visitas +€5 por visita.</span><span data-lang="ru">Дополнительные питомцы в одном доме: передержка +€15 за ночь, визиты +€5 за визит.</span><span data-lang="de">Weitere Tiere im selben Zuhause: Boarding +€15 pro Nacht, Hausbesuche +€5 pro Besuch.</span></p>
+<div class="form-label" style="margin-bottom:10px"><span data-lang="en">Add-ons (optional)</span><span data-lang="es">Extras (opcional)</span><span data-lang="ru">Дополнительно (необязательно)</span><span data-lang="de">Extras (optional)</span></div>
+    <div class="calc-addons">
+      <button class="calc-addon" data-price="10" onclick="this.classList.toggle('active');calcUpdate()"><span data-lang="en">💊 Medication +€10</span><span data-lang="es">💊 Medicación +€10</span><span data-lang="ru">💊 Медикаменты +€10</span><span data-lang="de">💊 Medikamente +€10</span></button>
+      
+      <button class="calc-addon" data-price="8" onclick="this.classList.toggle('active');calcUpdate()"><span data-lang="en">🚶 Solo walk +€8</span><span data-lang="es">🚶 Paseo individual +€8</span><span data-lang="ru">🚶 Индив. прогулка +€8</span><span data-lang="de">🚶 Einzelspaziergang +€8</span></button>
+      
+    </div>
+    <div class="calc-result">
+      <div><div class="calc-result-label"><span data-lang="en">Estimated total</span><span data-lang="es">Total estimado</span><span data-lang="ru">Примерная стоимость</span><span data-lang="de">Geschätzter Gesamtpreis</span></div><div class="calc-result-price">€<span id="calc-total">90</span></div><div class="calc-result-breakdown" id="calc-breakdown">3 nights × €30</div></div>
+      <a href="#book" class="btn-primary" style="background:#fff;color:var(--green);white-space:nowrap"><span data-lang="en">Book this →</span><span data-lang="es">Reservar →</span><span data-lang="ru">Записаться →</span><span data-lang="de">Buchen →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- AVAILABILITY CALENDAR -->
+
+
+
+<section style="background:var(--sand);padding:76px 5%" id="sitter-directory">
+  <div class="section-tag"><span data-lang="en">Founding sitters</span><span data-lang="es">Cuidadores fundadores</span><span data-lang="ru">Ситтеры-основатели</span><span data-lang="de">Gründungs-Sitter</span></div>
+  <h2 class="section-title"><span data-lang="en">Meet our first sitters — joining now</span><span data-lang="es">Conoce a nuestros primeros cuidadores — se están uniendo</span><span data-lang="ru">Знакомьтесь с первыми ситтерами — они присоединяются</span><span data-lang="de">Lerne unsere ersten Sitter kennen — sie kommen gerade dazu</span></h2>
+  <p class="section-subtitle"><span data-lang="en">We interview and vet every sitter personally before they appear here. In the meantime, tell us what you need and we will match you with someone we trust — by hand, not by algorithm.</span><span data-lang="es">Entrevistamos y verificamos personalmente a cada cuidador antes de que aparezca aquí. Mientras tanto, cuéntanos qué necesitas y te asignaremos a alguien de confianza — a mano, no con un algoritmo.</span><span data-lang="ru">Мы лично собеседуем и проверяем каждого ситтера, прежде чем он появится здесь. А пока расскажите, что вам нужно, и мы подберём человека, которому доверяем, — вручную, а не алгоритмом.</span><span data-lang="de">Wir interviewen und prüfen jeden Sitter persönlich, bevor er hier erscheint. Bis dahin: Sag uns was du brauchst und wir matchen dich mit jemandem dem wir vertrauen — von Hand, nicht per Algorithmus.</span></p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:40px">
+    <div style="background:#fff;border-radius:16px;padding:22px;border:1px solid #ede8e0"><div style="width:34px;height:34px;border-radius:50%;background:#1a6b4a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;margin-bottom:12px">1</div><h4 style="font-family:Lora,serif;font-size:16px;font-weight:600;margin-bottom:6px"><span data-lang="en">Personal interview</span><span data-lang="es">Entrevista personal</span><span data-lang="ru">Личное собеседование</span><span data-lang="de">Persönliches Interview</span></h4><p style="font-size:13px;color:#555;line-height:1.7;margin:0"><span data-lang="en">We meet every applicant and talk through their experience with animals and their home.</span><span data-lang="es">Conocemos a cada candidato y hablamos de su experiencia con animales y de su hogar.</span><span data-lang="ru">Мы встречаемся с каждым кандидатом и обсуждаем его опыт с животными и условия дома.</span><span data-lang="de">Wir treffen jeden Bewerber und sprechen über seine Tiererfahrung und sein Zuhause.</span></p></div>
+    <div style="background:#fff;border-radius:16px;padding:22px;border:1px solid #ede8e0"><div style="width:34px;height:34px;border-radius:50%;background:#1a6b4a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;margin-bottom:12px">2</div><h4 style="font-family:Lora,serif;font-size:16px;font-weight:600;margin-bottom:6px"><span data-lang="en">Background & references</span><span data-lang="es">Antecedentes y referencias</span><span data-lang="ru">Проверка и рекомендации</span><span data-lang="de">Hintergrund & Referenzen</span></h4><p style="font-size:13px;color:#555;line-height:1.7;margin:0"><span data-lang="en">Criminal record certificate and reference checks before anyone is approved.</span><span data-lang="es">Certificado de antecedentes penales y referencias antes de aprobar a nadie.</span><span data-lang="ru">Справка об отсутствии судимости и проверка рекомендаций до одобрения.</span><span data-lang="de">Führungszeugnis und Referenzprüfung bevor jemand freigeschaltet wird.</span></p></div>
+    <div style="background:#fff;border-radius:16px;padding:22px;border:1px solid #ede8e0"><div style="width:34px;height:34px;border-radius:50%;background:#1a6b4a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;margin-bottom:12px">3</div><h4 style="font-family:Lora,serif;font-size:16px;font-weight:600;margin-bottom:6px"><span data-lang="en">Home check</span><span data-lang="es">Revisión del hogar</span><span data-lang="ru">Осмотр дома</span><span data-lang="de">Heimcheck</span></h4><p style="font-size:13px;color:#555;line-height:1.7;margin:0"><span data-lang="en">We check the home is safe and comfortable for pets before the first booking.</span><span data-lang="es">Comprobamos que el hogar es seguro y cómodo para mascotas antes de la primera reserva.</span><span data-lang="ru">Проверяем, что дом безопасен и удобен для питомцев, до первого бронирования.</span><span data-lang="de">Wir prüfen vor der ersten Buchung, dass das Zuhause sicher und gemütlich für Tiere ist.</span></p></div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:20px">
+    <div style="background:rgba(255,255,255,.6);border:2px dashed #b9d9c8;border-radius:16px;padding:24px;text-align:center"><div style="font-size:30px;margin-bottom:8px">🐾</div><div style="font-family:Lora,serif;font-size:15px;font-weight:600;margin-bottom:6px">Estepona</div><div style="font-size:12px;color:#6b6b6b;margin-bottom:12px"><span data-lang="en">Founding sitter spot open</span><span data-lang="es">Plaza de cuidador fundador disponible</span><span data-lang="ru">Место ситтера-основателя свободно</span><span data-lang="de">Gründungs-Sitter-Platz frei</span></div><a href="#" class="spot-apply" onclick="openApply();return false;" style="font-size:13px;font-weight:600;color:#1a6b4a;text-decoration:none"><span data-lang="en">Apply →</span><span data-lang="es">Solicitar →</span><span data-lang="ru">Подать заявку →</span><span data-lang="de">Bewerben →</span></a></div>
+    <div style="background:rgba(255,255,255,.6);border:2px dashed #b9d9c8;border-radius:16px;padding:24px;text-align:center"><div style="font-size:30px;margin-bottom:8px">🐾</div><div style="font-family:Lora,serif;font-size:15px;font-weight:600;margin-bottom:6px">Nueva Andalucía</div><div style="font-size:12px;color:#6b6b6b;margin-bottom:12px"><span data-lang="en">Founding sitter spot open</span><span data-lang="es">Plaza de cuidador fundador disponible</span><span data-lang="ru">Место ситтера-основателя свободно</span><span data-lang="de">Gründungs-Sitter-Platz frei</span></div><a href="#" class="spot-apply" onclick="openApply();return false;" style="font-size:13px;font-weight:600;color:#1a6b4a;text-decoration:none"><span data-lang="en">Apply →</span><span data-lang="es">Solicitar →</span><span data-lang="ru">Подать заявку →</span><span data-lang="de">Bewerben →</span></a></div>
+    <div style="background:rgba(255,255,255,.6);border:2px dashed #b9d9c8;border-radius:16px;padding:24px;text-align:center"><div style="font-size:30px;margin-bottom:8px">🐾</div><div style="font-family:Lora,serif;font-size:15px;font-weight:600;margin-bottom:6px">Marbella · Puerto Banús</div><div style="font-size:12px;color:#6b6b6b;margin-bottom:12px"><span data-lang="en">Founding sitter spot open</span><span data-lang="es">Plaza de cuidador fundador disponible</span><span data-lang="ru">Место ситтера-основателя свободно</span><span data-lang="de">Gründungs-Sitter-Platz frei</span></div><a href="#" class="spot-apply" onclick="openApply();return false;" style="font-size:13px;font-weight:600;color:#1a6b4a;text-decoration:none"><span data-lang="en">Apply →</span><span data-lang="es">Solicitar →</span><span data-lang="ru">Подать заявку →</span><span data-lang="de">Bewerben →</span></a></div>
+    <div style="background:rgba(255,255,255,.6);border:2px dashed #b9d9c8;border-radius:16px;padding:24px;text-align:center"><div style="font-size:30px;margin-bottom:8px">🐾</div><div style="font-family:Lora,serif;font-size:15px;font-weight:600;margin-bottom:6px">Mijas</div><div style="font-size:12px;color:#6b6b6b;margin-bottom:12px"><span data-lang="en">Founding sitter spot open</span><span data-lang="es">Plaza de cuidador fundador disponible</span><span data-lang="ru">Место ситтера-основателя свободно</span><span data-lang="de">Gründungs-Sitter-Platz frei</span></div><a href="#" class="spot-apply" onclick="openApply();return false;" style="font-size:13px;font-weight:600;color:#1a6b4a;text-decoration:none"><span data-lang="en">Apply →</span><span data-lang="es">Solicitar →</span><span data-lang="ru">Подать заявку →</span><span data-lang="de">Bewerben →</span></a></div>
+  </div>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:36px">
+    <a href="#book" class="btn-primary"><span data-lang="en">Request a personal match →</span><span data-lang="es">Solicitar asignación personal →</span><span data-lang="ru">Подобрать ситтера лично →</span><span data-lang="de">Persönliches Matching anfragen →</span></a>
+    <a href="#" onclick="openApply();return false;" class="btn-outline"><span data-lang="en">Become a founding sitter</span><span data-lang="es">Ser cuidador fundador</span><span data-lang="ru">Стать ситтером-основателем</span><span data-lang="de">Gründungs-Sitter werden</span></a>
+  </div>
+</section>
+
+<!-- ===== HOW THE PLATFORM WORKS ===== -->
+
+
+
+<section style="background:var(--sand);padding:76px 5%" id="kennel-vs">
+  <div class="section-tag"><span data-lang="en">Why PawStay</span><span data-lang="es">Por qué PawStay</span><span data-lang="ru">Почему PawStay</span><span data-lang="de">Warum PawStay</span></div>
+  <h2 class="section-title"><span data-lang="en">PawStay vs a kennel</span><span data-lang="es">PawStay vs una residencia</span><span data-lang="ru">PawStay против питомника</span><span data-lang="de">PawStay vs. Tierpension</span></h2>
+  <p class="section-subtitle"><span data-lang="en">Most pet owners choose a kennel out of habit. Here's why thousands are switching to home boarding.</span><span data-lang="es">La mayoría de los dueños eligen una residencia por costumbre. Aquí te explicamos por qué miles están cambiando al alojamiento en casa.</span><span data-lang="ru">Большинство владельцев выбирают питомник по привычке. Вот почему тысячи переходят на передержку дома.</span><span data-lang="de">Die meisten Tierbesitzer wählen eine Tierpension aus Gewohnheit. Hier ist, warum Tausende zur Heimbetreuung wechseln.</span></p>
+
+  <div class="stack-m" style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px;max-width:860px;margin-left:auto;margin-right:auto">
+    <!-- Kennel column -->
+    <div style="background:var(--white);border-radius:var(--radius-lg);padding:30px;border:1px solid var(--sand-dark)">
+      <div style="text-align:center;margin-bottom:24px">
+        <div style="font-size:40px;margin-bottom:8px">🏢</div>
+        <h3 style="font-family:'Lora',serif;font-size:20px;font-weight:600;color:var(--text)"><span data-lang="en">Traditional kennel</span><span data-lang="es">Residencia tradicional</span><span data-lang="ru">Традиционный питомник</span><span data-lang="de">Traditionelle Tierpension</span></h3>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:13px">
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="color:#e53e3e;font-size:16px;flex-shrink:0;margin-top:1px">✗</div><div style="font-size:14px;color:var(--text-mid)"><span data-lang="en">Cage or run environment — stressful for most pets</span><span data-lang="es">Jaulas o boxes — estresante para la mayoría de mascotas</span><span data-lang="ru">Клетки — стресс для большинства питомцев</span><span data-lang="de">Käfig- oder Boxenumgebung — stressig für die meisten Tiere</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="color:#e53e3e;font-size:16px;flex-shrink:0;margin-top:1px">✗</div><div style="font-size:14px;color:var(--text-mid)"><span data-lang="en">Staff care for 20–50 animals at once</span><span data-lang="es">El personal cuida 20–50 animales a la vez</span><span data-lang="ru">Персонал ухаживает за 20–50 животными одновременно</span><span data-lang="de">Personal betreut 20–50 Tiere gleichzeitig</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="color:#e53e3e;font-size:16px;flex-shrink:0;margin-top:1px">✗</div><div style="font-size:14px;color:var(--text-mid)"><span data-lang="en">Fixed drop-off and pick-up times</span><span data-lang="es">Horarios fijos de entrega y recogida</span><span data-lang="ru">Фиксированное время сдачи и забора</span><span data-lang="de">Feste Abgabe- und Abholzeiten</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="color:#e53e3e;font-size:16px;flex-shrink:0;margin-top:1px">✗</div><div style="font-size:14px;color:var(--text-mid)"><span data-lang="en">No updates — you don't know how they're doing</span><span data-lang="es">Sin actualizaciones — no sabes cómo están</span><span data-lang="ru">Никаких обновлений — вы не знаете, как они</span><span data-lang="de">Keine Updates — du weißt nicht, wie es ihnen geht</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="color:#e53e3e;font-size:16px;flex-shrink:0;margin-top:1px">✗</div><div style="font-size:14px;color:var(--text-mid)"><span data-lang="en">High risk of illness from other animals</span><span data-lang="es">Alto riesgo de enfermedades por contacto con otros animales</span><span data-lang="ru">Высокий риск болезней от других животных</span><span data-lang="de">Hohes Krankheitsrisiko durch andere Tiere</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="color:#e53e3e;font-size:16px;flex-shrink:0;margin-top:1px">✗</div><div style="font-size:14px;color:var(--text-mid)"><span data-lang="en">Your pet has no personal bond with any carer</span><span data-lang="es">Tu mascota no tiene vínculo personal con ningún cuidador</span><span data-lang="ru">У питомца нет личной связи ни с одним сотрудником</span><span data-lang="de">Dein Tier hat keine persönliche Bindung zu einem Betreuer</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="color:#e53e3e;font-size:16px;flex-shrink:0;margin-top:1px">✗</div><div style="font-size:14px;color:var(--text-mid)"><span data-lang="en">Pets often come home anxious, exhausted or unwell</span><span data-lang="es">Las mascotas suelen volver ansiosas, agotadas o enfermas</span><span data-lang="ru">Питомцы часто возвращаются тревожными, истощёнными или больными</span><span data-lang="de">Tiere kommen oft ängstlich, erschöpft oder krank nach Hause</span></div></div>
+      </div>
+    </div>
+
+    <!-- PawStay column -->
+    <div style="background:var(--green);border-radius:var(--radius-lg);padding:30px;position:relative;overflow:hidden">
+      <div style="position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:rgba(255,255,255,.06);border-radius:50%"></div>
+      <div style="text-align:center;margin-bottom:24px;position:relative;z-index:1">
+        <div style="font-size:40px;margin-bottom:8px">🏠</div>
+        <h3 style="font-family:'Lora',serif;font-size:20px;font-weight:600;color:#fff">PawStay</h3>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:13px;position:relative;z-index:1">
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="color:#a8d8c0;font-size:16px;flex-shrink:0;margin-top:1px">✓</div><div style="font-size:14px;color:rgba(255,255,255,.9)"><span data-lang="en">Real home — sofa, garden, love and attention</span><span data-lang="es">Hogar real — sofá, jardín, amor y atención</span><span data-lang="ru">Настоящий дом — диван, сад, любовь и внимание</span><span data-lang="de">Echtes Zuhause — Sofa, Garten, Liebe und Aufmerksamkeit</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="color:#a8d8c0;font-size:16px;flex-shrink:0;margin-top:1px">✓</div><div style="font-size:14px;color:rgba(255,255,255,.9)"><span data-lang="en">Your sitter cares for max 2–3 pets at once</span><span data-lang="es">Tu cuidador cuida un máximo de 2–3 mascotas a la vez</span><span data-lang="ru">Ситтер заботится максимум о 2–3 животных одновременно</span><span data-lang="de">Dein Sitter betreut max. 2–3 Tiere gleichzeitig</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="color:#a8d8c0;font-size:16px;flex-shrink:0;margin-top:1px">✓</div><div style="font-size:14px;color:rgba(255,255,255,.9)"><span data-lang="en">Flexible drop-off and pick-up to suit you</span><span data-lang="es">Entrega y recogida flexible según tus necesidades</span><span data-lang="ru">Гибкое время сдачи и забора под ваш график</span><span data-lang="de">Flexible Abgabe und Abholung nach deinen Wünschen</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="color:#a8d8c0;font-size:16px;flex-shrink:0;margin-top:1px">✓</div><div style="font-size:14px;color:rgba(255,255,255,.9)"><span data-lang="en">Daily photos and videos so you can relax on holiday</span><span data-lang="es">Fotos y vídeos diarios para que disfrutes tus vacaciones</span><span data-lang="ru">Ежедневные фото и видео — отдыхайте спокойно</span><span data-lang="de">Tägliche Fotos und Videos, damit du entspannt Urlaub machst</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="color:#a8d8c0;font-size:16px;flex-shrink:0;margin-top:1px">✓</div><div style="font-size:14px;color:rgba(255,255,255,.9)"><span data-lang="en">One-on-one environment — no kennel cough risk</span><span data-lang="es">Entorno personalizado — sin riesgo de tos de perrera</span><span data-lang="ru">Индивидуальная среда — нет риска заражения</span><span data-lang="de">Einzelumgebung — kein Zwingerhusten-Risiko</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="color:#a8d8c0;font-size:16px;flex-shrink:0;margin-top:1px">✓</div><div style="font-size:14px;color:rgba(255,255,255,.9)"><span data-lang="en">Your pet builds a real bond with their sitter</span><span data-lang="es">Tu mascota crea un vínculo real con su cuidador</span><span data-lang="ru">Питомец выстраивает настоящую связь с ситтером</span><span data-lang="de">Dein Tier baut eine echte Bindung zu seinem Sitter auf</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="color:#a8d8c0;font-size:16px;flex-shrink:0;margin-top:1px">✓</div><div style="font-size:14px;color:rgba(255,255,255,.9)"><span data-lang="en">Pets come home happy, rested and well-loved</span><span data-lang="es">Las mascotas vuelven felices, descansadas y bien cuidadas</span><span data-lang="ru">Питомцы возвращаются счастливыми, отдохнувшими и любимыми</span><span data-lang="de">Tiere kommen glücklich, ausgeruht und geliebt nach Hause</span></div></div>
+      </div>
+      <a href="#book" style="display:block;background:#fff;color:var(--green);text-align:center;padding:12px;border-radius:var(--radius);font-weight:500;font-size:14px;text-decoration:none;margin-top:24px;position:relative;z-index:1"><span data-lang="en">Find a sitter now →</span><span data-lang="es">Buscar cuidador →</span><span data-lang="ru">Найти ситтера →</span><span data-lang="de">Jetzt Sitter finden →</span></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== GUARANTEE ===== -->
+
+
+
+
+<section class="areas" id="areas">
+  <div class="section-tag"><span data-lang="en">Coverage areas</span><span data-lang="es">Zonas de cobertura</span><span data-lang="ru">Зоны обслуживания</span><span data-lang="de">Versorgungsgebiete</span></div>
+  <h2 class="section-title"><span data-lang="en">Launching in four Costa del Sol areas</span><span data-lang="es">Lanzándonos en cuatro zonas de la Costa del Sol</span><span data-lang="ru">Запускаемся в четырёх районах Коста-дель-Соль</span><span data-lang="de">Start in vier Gebieten der Costa del Sol</span></h2>
+  <p class="section-subtitle"><span data-lang="en">We are recruiting founding sitters in Marbella, Estepona, Mijas and Nueva Andalucía. Tell us where you are and we will match you personally.</span><span data-lang="es">Estamos reclutando cuidadores fundadores en Marbella, Estepona, Mijas y Nueva Andalucía. Dinos dónde estás y te asignaremos uno personalmente.</span><span data-lang="ru">Мы набираем ситтеров-основателей в Марбелье, Эстепоне, Михасе и Нуэве-Андалусии. Скажите, где вы, и мы подберём ситтера лично.</span><span data-lang="de">Wir suchen Gründungs-Sitter in Marbella, Estepona, Mijas und Nueva Andalucía. Sag uns wo du bist, wir matchen dich persönlich.</span></p>
+
+  <div class="areas-layout">
+    <div class="map-container"><div id="pawstay-map"></div></div>
+
+    <div>
+      <!-- Stats row -->
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px">
+        <div style="background:var(--green);border-radius:var(--radius);padding:14px;text-align:center">
+          <div style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:#fff">4</div>
+          <div style="font-size:11px;color:rgba(255,255,255,.8);margin-top:2px"><span data-lang="en">Launch areas</span><span data-lang="es">Zonas de lanzamiento</span><span data-lang="ru">Районов запуска</span><span data-lang="de">Startgebiete</span></div>
+        </div>
+        <div style="background:var(--green);border-radius:var(--radius);padding:14px;text-align:center">
+          <div style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:#fff">100%</div>
+          <div style="font-size:11px;color:rgba(255,255,255,.8);margin-top:2px"><span data-lang="en">Personally vetted</span><span data-lang="es">Verificados personalmente</span><span data-lang="ru">Лично проверены</span><span data-lang="de">Persönlich geprüft</span></div>
+        </div>
+        <div style="background:var(--green);border-radius:var(--radius);padding:14px;text-align:center">
+          <div style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:#fff"><span data-lang="en">Free</span><span data-lang="es">Gratis</span><span data-lang="ru">Бесплатно</span><span data-lang="de">Gratis</span></div>
+          <div style="font-size:11px;color:rgba(255,255,255,.8);margin-top:2px"><span data-lang="en">Meet & greet first</span><span data-lang="es">Encuentro previo</span><span data-lang="ru">Знакомство до брони</span><span data-lang="de">Kennenlernen vorab</span></div>
+        </div>
+      </div>
+
+      <!-- Launch areas -->
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+<div style="background:var(--white);border-radius:14px;padding:16px 18px;border:1px solid var(--sand-dark)"><div style="font-family:Lora,serif;font-size:16px;font-weight:600;margin-bottom:4px">Estepona</div><div style="font-size:12px;color:var(--text-soft);line-height:1.6">Town centre · New Golden Mile</div></div>
+<div style="background:var(--white);border-radius:14px;padding:16px 18px;border:1px solid var(--sand-dark)"><div style="font-family:Lora,serif;font-size:16px;font-weight:600;margin-bottom:4px">Nueva Andalucía</div><div style="font-size:12px;color:var(--text-soft);line-height:1.6">Golf Valley · Aloha · La Quinta</div></div>
+<div style="background:var(--white);border-radius:14px;padding:16px 18px;border:1px solid var(--sand-dark)"><div style="font-family:Lora,serif;font-size:16px;font-weight:600;margin-bottom:4px">Marbella</div><div style="font-size:12px;color:var(--text-soft);line-height:1.6">Centro · Golden Mile · Puerto Banús</div></div>
+<div style="background:var(--white);border-radius:14px;padding:16px 18px;border:1px solid var(--sand-dark)"><div style="font-family:Lora,serif;font-size:16px;font-weight:600;margin-bottom:4px">Mijas</div><div style="font-size:12px;color:var(--text-soft);line-height:1.6">Mijas Costa · La Cala · Mijas Pueblo</div></div>
+</div>
+
+<!-- Not listed note -->
+      <p style="font-size:12px;color:var(--text-soft);margin-top:12px;line-height:1.6"><span data-lang="en">Not in these areas yet? <a href="#book" style="color:var(--green);font-weight:500">Send an enquiry</a> — we will tell you as soon as we have a sitter near you.</span><span data-lang="es">¿Aún no estás en estas zonas? <a href="#book" style="color:var(--green);font-weight:500">Envía una consulta</a> — te avisaremos en cuanto tengamos un cuidador cerca.</span><span data-lang="ru">Вашего района пока нет? <a href="#book" style="color:var(--green);font-weight:500">Отправьте запрос</a> — мы сообщим, как только у нас появится ситтер рядом.</span><span data-lang="de">Noch nicht in diesen Gebieten? <a href="#book" style="color:var(--green);font-weight:500">Anfrage senden</a> — wir melden uns sobald wir einen Sitter in deiner Nähe haben.</span></p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section style="background:var(--green);padding:76px 5%" id="safety">
+  <div class="stack-m" style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;max-width:1100px;margin:0 auto">
+    <!-- Safety -->
+    <div>
+      <div class="section-tag" style="color:var(--green-mid)"><span data-lang="en">Your pet's safety</span><span data-lang="es">La seguridad de tu mascota</span><span data-lang="ru">Безопасность вашего питомца</span><span data-lang="de">Die Sicherheit deines Tieres</span></div>
+      <h2 class="section-title" style="color:#fff"><span data-lang="en">Your pet's safety is our priority</span><span data-lang="es">La seguridad de tu mascota es nuestra prioridad</span><span data-lang="ru">Безопасность вашего питомца — наш приоритет</span><span data-lang="de">Die Sicherheit deines Tieres hat Priorität</span></h2>
+      <div style="display:flex;flex-direction:column;gap:14px;margin-top:24px">
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px">✓</div><div style="font-size:14px;color:rgba(255,255,255,.9)"><span data-lang="en">Every sitter personally interviewed, background-checked and home-inspected</span><span data-lang="es">Cada cuidador entrevistado personalmente, con antecedentes verificados e inspección del hogar</span><span data-lang="ru">Каждый ситтер лично проинтервьюирован, проверен и его жильё осмотрено</span><span data-lang="de">Jeder Sitter persönlich interviewt, hintergrundgeprüft und Heiminspektion durchgeführt</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px">✓</div><div style="font-size:14px;color:rgba(255,255,255,.9)"><span data-lang="en">We agree your vet's details and emergency instructions before every stay</span><span data-lang="es">Acordamos los datos de tu veterinario y las instrucciones de emergencia antes de cada estancia</span><span data-lang="ru">Перед каждым визитом мы согласуем контакты вашего ветеринара и инструкции на экстренный случай</span><span data-lang="de">Vor jedem Aufenthalt klären wir die Daten deines Tierarztes und die Notfallanweisungen</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px">✓</div><div style="font-size:14px;color:rgba(255,255,255,.9)"><span data-lang="en">A free meet & greet so you and your pet can check the match first</span><span data-lang="es">Un encuentro gratuito para que tú y tu mascota comprobéis que encajáis</span><span data-lang="ru">Бесплатное знакомство, чтобы вы и питомец убедились, что ситтер подходит</span><span data-lang="de">Ein kostenloses Kennenlernen, damit du und dein Tier prüfen können, ob es passt</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px">✓</div><div style="font-size:14px;color:rgba(255,255,255,.9)"><span data-lang="en">Daily photo and video updates — you always know how your pet is doing</span><span data-lang="es">Fotos y vídeos diarios — siempre sabes cómo está tu mascota</span><span data-lang="ru">Ежедневные фото и видео — вы всегда знаете как поживает питомец</span><span data-lang="de">Tägliche Foto- und Video-Updates — du weißt immer wie es deinem Tier geht</span></div></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px">✓</div><div style="font-size:14px;color:rgba(255,255,255,.9)"><span data-lang="en">No payment when you send a request — payment is arranged after your meet & greet</span><span data-lang="es">Sin pago al enviar la solicitud — el pago se acuerda después del encuentro previo</span><span data-lang="ru">Оплата при отправке заявки не нужна — оплату согласуем после знакомства</span><span data-lang="de">Keine Zahlung bei der Anfrage — die Zahlung wird nach dem Kennenlernen vereinbart</span></div></div>
+      </div>
+    </div>
+    <!-- Guarantee -->
+    <div style="background:rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:32px;border:1px solid rgba(255,255,255,.15)">
+      <div style="font-size:48px;margin-bottom:16px">🛡️</div>
+      <h3 style="font-family:'Lora',serif;font-size:22px;font-weight:600;color:#fff;margin-bottom:14px"><span data-lang="en">The PawStay guarantee</span><span data-lang="es">La garantía PawStay</span><span data-lang="ru">Гарантия PawStay</span><span data-lang="de">Die PawStay-Garantie</span></h3>
+      <p style="font-size:14px;color:rgba(255,255,255,.85);line-height:1.8;margin-bottom:24px"><span data-lang="en">If you are not happy with your sitter match, we will find you a new one free of charge. If anything goes wrong during a stay, contact us right away and we will help sort it out.</span><span data-lang="es">Si no estás satisfecho con tu cuidador, te encontraremos uno nuevo sin coste. Si algo sale mal durante la estancia, contáctanos de inmediato y te ayudaremos a resolverlo.</span><span data-lang="ru">Если вы недовольны ситтером — найдём нового бесплатно. Если что-то пойдёт не так во время визита, сразу свяжитесь с нами, и мы поможем всё решить.</span><span data-lang="de">Wenn du mit deinem Sitter nicht zufrieden bist, finden wir kostenlos einen neuen. Falls während des Aufenthalts etwas schiefgeht, melde dich sofort und wir helfen dir bei der Lösung.</span></p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px">
+        <div style="background:rgba(255,255,255,.1);border-radius:10px;padding:12px;text-align:center"><div style="font-size:20px;margin-bottom:4px">🔄</div><div style="font-size:12px;color:#fff;font-weight:500"><span data-lang="en">Free rematch</span><span data-lang="es">Reasignación gratuita</span><span data-lang="ru">Бесплатный реподбор</span><span data-lang="de">Kostenlose Neuzuweisung</span></div></div>
+        <div style="background:rgba(255,255,255,.1);border-radius:10px;padding:12px;text-align:center"><div style="font-size:20px;margin-bottom:4px">🤝</div><div style="font-size:12px;color:#fff;font-weight:500"><span data-lang="en">Free meet & greet</span><span data-lang="es">Encuentro previo gratuito</span><span data-lang="ru">Бесплатное знакомство</span><span data-lang="de">Kostenloses Kennenlernen</span></div></div>
+        <div style="background:rgba(255,255,255,.1);border-radius:10px;padding:12px;text-align:center"><div style="font-size:20px;margin-bottom:4px">📅</div><div style="font-size:12px;color:#fff;font-weight:500"><span data-lang="en">Free cancellation (48 h)</span><span data-lang="es">Cancelación gratuita (48 h)</span><span data-lang="ru">Бесплатная отмена (за 48 ч)</span><span data-lang="de">Kostenlose Stornierung (48 Std.)</span></div></div>
+        <div style="background:rgba(255,255,255,.1);border-radius:10px;padding:12px;text-align:center"><div style="font-size:20px;margin-bottom:4px">💬</div><div style="font-size:12px;color:#fff;font-weight:500"><span data-lang="en">Free to enquire</span><span data-lang="es">Consulta sin coste</span><span data-lang="ru">Запрос бесплатно</span><span data-lang="de">Anfrage kostenlos</span></div></div>
+      </div>
+      <a href="#book" class="btn-primary" style="background:#fff;color:var(--green);display:block;text-align:center"><span data-lang="en">Book with confidence →</span><span data-lang="es">Reserva con confianza →</span><span data-lang="ru">Бронируйте с уверенностью →</span><span data-lang="de">Mit Vertrauen buchen →</span></a>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="booking-section" id="book">
+  <div class="section-tag reveal"><span data-lang="en">Book now</span><span data-lang="es">Reservar ahora</span><span data-lang="ru">Записаться</span><span data-lang="de">Jetzt buchen</span></div>
+  <h2 class="section-title reveal"><span data-lang="en">Find the perfect sitter</span><span data-lang="es">Encuentra al cuidador perfecto</span><span data-lang="ru">Найдите идеального ситтера</span><span data-lang="de">Finde den perfekten Sitter</span></h2>
+  <p class="section-subtitle reveal"><span data-lang="en">Tell us about your pet and we'll match you with available sitters in your area.</span><span data-lang="es">Cuéntanos sobre tu mascota y te pondremos en contacto con los cuidadores disponibles en tu zona.</span><span data-lang="ru">Расскажите нам о своём питомце, и мы подберём доступных ситтеров в вашем районе.</span><span data-lang="de">Erzähl uns von deinem Tier und wir matchen dich mit verfügbaren Sittern in deiner Nähe.</span></p>
+  <div class="booking-wrapper reveal">
+    <div class="booking-steps">
+      <div class="bstep active" id="step-ind-1"><div class="bstep-circle">1</div><div class="bstep-label"><span data-lang="en">Your pet</span><span data-lang="es">Tu mascota</span><span data-lang="ru">Питомец</span><span data-lang="de">Dein Tier</span></div></div>
+      <div class="bstep" id="step-ind-2"><div class="bstep-circle">2</div><div class="bstep-label"><span data-lang="en">Dates</span><span data-lang="es">Fechas</span><span data-lang="ru">Даты</span><span data-lang="de">Termine</span></div></div>
+      <div class="bstep" id="step-ind-3"><div class="bstep-circle">3</div><div class="bstep-label"><span data-lang="en">Your details</span><span data-lang="es">Tus datos</span><span data-lang="ru">Ваши данные</span><span data-lang="de">Deine Angaben</span></div></div>
+    </div>
+    <div class="booking-form active" id="book-step-1">
+      <div class="form-group">
+        <label class="form-label"><span data-lang="en">Pet type</span><span data-lang="es">Tipo de mascota</span><span data-lang="ru">Тип питомца</span><span data-lang="de">Tierart</span></label>
+        <div class="pet-types">
+          <button class="pet-type-btn selected" onclick="selectPet(this)">🐕 <span data-lang="en">Dog</span><span data-lang="es">Perro</span><span data-lang="ru">Собака</span><span data-lang="de">Hund</span></button>
+          <button class="pet-type-btn" onclick="selectPet(this)">🐈 <span data-lang="en">Cat</span><span data-lang="es">Gato</span><span data-lang="ru">Кошка</span><span data-lang="de">Katze</span></button>
+          <button class="pet-type-btn" onclick="selectPet(this)">🐇 <span data-lang="en">Rabbit</span><span data-lang="es">Conejo</span><span data-lang="ru">Кролик</span><span data-lang="de">Kaninchen</span></button>
+          <button class="pet-type-btn" onclick="selectPet(this)">🦜 <span data-lang="en">Bird</span><span data-lang="es">Pájaro</span><span data-lang="ru">Птица</span><span data-lang="de">Vogel</span></button>
+          <button class="pet-type-btn" onclick="selectPet(this)">🐾 <span data-lang="en">Other</span><span data-lang="es">Otro</span><span data-lang="ru">Другое</span><span data-lang="de">Andere</span></button>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label" for="pet-name"><span data-lang="en">Pet name</span><span data-lang="es">Nombre</span><span data-lang="ru">Имя питомца</span><span data-lang="de">Name des Tieres</span></label><input type="text" class="form-input" id="pet-name" placeholder="Buddy"/></div>
+        <div class="form-group"><label class="form-label" for="pet-breed"><span data-lang="en">Breed (optional)</span><span data-lang="es">Raza (opcional)</span><span data-lang="ru">Порода (необязательно)</span><span data-lang="de">Rasse (optional)</span></label><input type="text" class="form-input" id="pet-breed" placeholder="Labrador"/></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="owner-service"><span data-lang="en">Service</span><span data-lang="es">Servicio</span><span data-lang="ru">Услуга</span><span data-lang="de">Service</span></label>
+        <select class="form-select" id="owner-service"><option value=""></option><option>🏠 Home boarding — €30/night</option><option>☀️ Day care, full day (up to 10 h) — €18</option><option>🌤️ Day care, half day (up to 5 h) — €12</option><option>🦮 Dog walking — €12/walk</option><option>🏡 Home visits — €15/visit</option><option>🚗 Pet taxi — price on request</option></select>
+      </div>
+      <div class="form-group"><label class="form-label" for="owner-area"><span data-lang="en">Your location</span><span data-lang="es">Tu ubicación</span><span data-lang="ru">Ваш район</span><span data-lang="de">Dein Standort</span></label><input type="text" class="form-input" id="owner-area" placeholder="Marbella, Estepona, Mijas, Nueva Andalucía..."/></div>
+      <div class="booking-nav"><div></div><button class="btn-primary" onclick="nextStep(1)"><span data-lang="en">Continue →</span><span data-lang="es">Continuar →</span><span data-lang="ru">Далее →</span><span data-lang="de">Weiter →</span></button></div>
+    </div>
+    <div class="booking-form" id="book-step-2">
+      <div class="form-row">
+        <div class="form-group"><label class="form-label" for="start-date"><span data-lang="en">Start date</span><span data-lang="es">Fecha inicio</span><span data-lang="ru">Дата начала</span><span data-lang="de">Startdatum</span></label><input type="date" class="form-input" id="start-date"/></div>
+        <div class="form-group"><label class="form-label" for="end-date"><span data-lang="en">End date</span><span data-lang="es">Fecha fin</span><span data-lang="ru">Дата окончания</span><span data-lang="de">Enddatum</span></label><input type="date" class="form-input" id="end-date"/></div>
+      </div>
+      <div class="form-group"><label class="form-label" for="owner-notes"><span data-lang="en">Special requirements</span><span data-lang="es">Requisitos especiales</span><span data-lang="ru">Особые требования</span><span data-lang="de">Besondere Hinweise</span></label><textarea class="form-textarea" id="owner-notes" placeholder="Medication, diet, fears..."></textarea></div>
+      <div class="booking-nav"><button class="btn-back" onclick="prevStep(2)">← <span data-lang="en">Back</span><span data-lang="es">Atrás</span><span data-lang="ru">Назад</span><span data-lang="de">Zurück</span></button><button class="btn-primary" onclick="nextStep(2)"><span data-lang="en">Continue →</span><span data-lang="es">Continuar →</span><span data-lang="ru">Далее →</span><span data-lang="de">Weiter →</span></button></div>
+    </div>
+    <div class="booking-form" id="book-step-3">
+      <div class="form-row">
+        <div class="form-group"><label class="form-label" for="owner-first"><span data-lang="en">First name</span><span data-lang="es">Nombre</span><span data-lang="ru">Имя</span><span data-lang="de">Vorname</span></label><input type="text" class="form-input" id="owner-first" autocomplete="given-name"/></div>
+        <div class="form-group"><label class="form-label" for="owner-last"><span data-lang="en">Last name</span><span data-lang="es">Apellido</span><span data-lang="ru">Фамилия</span><span data-lang="de">Nachname</span></label><input type="text" class="form-input" id="owner-last" autocomplete="family-name"/></div>
+      </div>
+      <div class="form-group"><label class="form-label" for="owner-email">Email</label><input type="email" class="form-input" id="owner-email" placeholder="you@email.com" autocomplete="email"/></div>
+      <div class="form-group"><label class="form-label" for="owner-phone"><span data-lang="en">Phone</span><span data-lang="es">Teléfono</span><span data-lang="ru">Телефон</span><span data-lang="de">Telefon</span></label><input type="tel" class="form-input" id="owner-phone" placeholder="+34 6XX XXX XXX" autocomplete="tel"/></div>
+      <label style="display:flex;gap:10px;align-items:flex-start;font-size:12px;color:var(--text-mid);line-height:1.55;margin:6px 0 14px;cursor:pointer"><input type="checkbox" id="owner-consent" style="margin-top:3px;flex-shrink:0"/><span><span data-lang="en">I agree to the <a href="#" onclick="openPolicy('privacy');return false;" style="color:var(--green);text-decoration:underline">Privacy Policy</a> and to PawStay contacting me about this request.</span><span data-lang="es">Acepto la <a href="#" onclick="openPolicy('privacy');return false;" style="color:var(--green);text-decoration:underline">Política de Privacidad</a> y que PawStay me contacte sobre esta solicitud.</span><span data-lang="ru">Я согласен(на) с <a href="#" onclick="openPolicy('privacy');return false;" style="color:var(--green);text-decoration:underline">Политикой конфиденциальности</a> и на то, что PawStay свяжется со мной по этой заявке.</span><span data-lang="de">Ich stimme der <a href="#" onclick="openPolicy('privacy');return false;" style="color:var(--green);text-decoration:underline">Datenschutzerklärung</a> zu und dass PawStay mich zu dieser Anfrage kontaktiert.</span></span></label>
+<div id="book-error" role="alert" style="display:none;color:#b3261e;font-size:13px;margin:-4px 0 12px"></div>
+<div class="booking-nav"><button class="btn-back" onclick="prevStep(3)">← <span data-lang="en">Back</span><span data-lang="es">Atrás</span><span data-lang="ru">Назад</span><span data-lang="de">Zurück</span></button><button class="btn-primary" onclick="submitBooking()">🐾 <span data-lang="en">Find my sitter</span><span data-lang="es">Encontrar cuidador</span><span data-lang="ru">Найти ситтера</span><span data-lang="de">Meinen Sitter finden</span></button></div>
+      <p class="booking-note"><span data-lang="en">No payment required now. We'll reply with matching sitters within 24 hours.</span><span data-lang="es">Sin pago ahora. Te responderemos con cuidadores en 24 horas.</span><span data-lang="ru">Оплата не требуется. Подберём ситтеров в течение 24 часов.</span><span data-lang="de">Jetzt ist keine Zahlung nötig. Wir melden uns mit passenden Sittern innerhalb von 24 Stunden.</span></p>
+    </div>
+  </div>
+
+    <p style="text-align:center;font-size:14px;color:var(--text-soft);margin-top:22px"><span data-lang="en">Prefer to chat?</span><span data-lang="es">¿Prefieres chatear?</span><span data-lang="ru">Удобнее написать?</span><span data-lang="de">Lieber chatten?</span> <a id="wa-book-link" href="https://wa.me/421908988260" target="_blank" rel="noopener" onclick="this.href=waLink(waGreeting())" style="color:var(--green);font-weight:600;text-decoration:underline"><span data-lang="en">Message us on WhatsApp</span><span data-lang="es">Escríbenos por WhatsApp</span><span data-lang="ru">Напишите нам в WhatsApp</span><span data-lang="de">Schreib uns auf WhatsApp</span></a></p>
+</section>
+
+
+
+<!-- ===== KENNEL VS PAWSTAY ===== -->
+
+
+
+<section style="background:var(--white);padding:76px 5%" id="first-booking">
+  <div class="section-tag"><span data-lang="en">Step by step</span><span data-lang="es">Paso a paso</span><span data-lang="ru">Шаг за шагом</span><span data-lang="de">Schritt für Schritt</span></div>
+  <h2 class="section-title"><span data-lang="en">Your first booking, in detail</span><span data-lang="es">Tu primera reserva, en detalle</span><span data-lang="ru">Ваше первое бронирование подробно</span><span data-lang="de">Deine erste Buchung im Detail</span></h2>
+  <p class="section-subtitle"><span data-lang="en">No surprises. Here is exactly what happens from enquiry to drop-off day.</span><span data-lang="es">Sin sorpresas. Esto es exactamente lo que ocurre desde la consulta hasta el día de entrega.</span><span data-lang="ru">Никаких сюрпризов. Вот именно то, что происходит от запроса до дня сдачи.</span><span data-lang="de">Keine Überraschungen. Genau das passiert von der Anfrage bis zum Abgabetag.</span></p>
+  <div style="max-width:700px;margin:48px auto 0;position:relative">
+    <div style="position:absolute;left:27px;top:0;bottom:0;width:2px;background:var(--green-mid)"></div>
+    <div style="display:flex;flex-direction:column;gap:0">
+      <div style="display:flex;gap:20px;padding-bottom:28px">
+        <div style="width:54px;height:54px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Lora',serif;font-size:17px;font-weight:600;flex-shrink:0;position:relative;z-index:1">1</div>
+        <div style="padding-top:9px"><h4 style="font-size:15px;font-weight:500;margin-bottom:5px"><span data-lang="en">Submit an enquiry</span><span data-lang="es">Envía una consulta</span><span data-lang="ru">Отправьте запрос</span><span data-lang="de">Anfrage senden</span></h4><p style="font-size:13px;color:var(--text-mid);line-height:1.7"><span data-lang="en">Fill in our short form — pet type, dates, location and service. Takes 2 minutes. No payment yet.</span><span data-lang="es">Rellena nuestro breve formulario — tipo de mascota, fechas, ubicación y servicio. 2 minutos. Sin pago todavía.</span><span data-lang="ru">Заполните короткую форму — тип питомца, даты, район и услуга. 2 минуты. Без оплаты.</span><span data-lang="de">Kurzes Formular ausfüllen — Tierart, Daten, Standort und Service. 2 Minuten. Noch keine Zahlung.</span></p></div>
+      </div>      <div style="display:flex;gap:20px;padding-bottom:28px">
+        <div style="width:54px;height:54px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Lora',serif;font-size:17px;font-weight:600;flex-shrink:0;position:relative;z-index:1">2</div>
+        <div style="padding-top:9px"><h4 style="font-size:15px;font-weight:500;margin-bottom:5px"><span data-lang="en">We match you within 24 hours</span><span data-lang="es">Te encontramos cuidador en 24 horas</span><span data-lang="ru">Подберём ситтера за 24 часа</span><span data-lang="de">Wir matchen dich innerhalb von 24 Stunden</span></h4><p style="font-size:13px;color:var(--text-mid);line-height:1.7"><span data-lang="en">We send you 2–3 matched sitter profiles by email. Each one is vetted, available and close to you.</span><span data-lang="es">Te enviamos 2–3 perfiles de cuidadores por email. Todos verificados, disponibles y cerca de ti.</span><span data-lang="ru">Присылаем 2–3 подходящих профиля по электронной почте. Все проверены, доступны и рядом.</span><span data-lang="de">Wir senden dir 2–3 passende Sitter-Profile per E-Mail. Alle geprüft, verfügbar und in der Nähe.</span></p></div>
+      </div>      <div style="display:flex;gap:20px;padding-bottom:28px">
+        <div style="width:54px;height:54px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Lora',serif;font-size:17px;font-weight:600;flex-shrink:0;position:relative;z-index:1">3</div>
+        <div style="padding-top:9px"><h4 style="font-size:15px;font-weight:500;margin-bottom:5px"><span data-lang="en">Free meet & greet</span><span data-lang="es">Encuentro gratuito</span><span data-lang="ru">Бесплатное знакомство</span><span data-lang="de">Kostenloses Kennenlernen</span></h4><p style="font-size:13px;color:var(--text-mid);line-height:1.7"><span data-lang="en">Visit your chosen sitter at home with your pet. Let them explore. Ask questions. No obligation to book.</span><span data-lang="es">Visita al cuidador en casa con tu mascota. Deja que explore. Haz preguntas. Sin obligación de reservar.</span><span data-lang="ru">Посетите дом ситтера с питомцем. Дайте ему осмотреться. Задайте вопросы. Без обязательств.</span><span data-lang="de">Sitter zuhause besuchen mit dem Tier. Erkunden lassen. Fragen stellen. Keine Buchungspflicht.</span></p></div>
+      </div>      <div style="display:flex;gap:20px;padding-bottom:28px">
+        <div style="width:54px;height:54px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Lora',serif;font-size:17px;font-weight:600;flex-shrink:0;position:relative;z-index:1">4</div>
+        <div style="padding-top:9px"><h4 style="font-size:15px;font-weight:500;margin-bottom:5px"><span data-lang="en">Confirm & arrange payment</span><span data-lang="es">Confirma y acuerda el pago</span><span data-lang="ru">Подтвердите и согласуйте оплату</span><span data-lang="de">Bestätigen & Zahlung vereinbaren</span></h4><p style="font-size:13px;color:var(--text-mid);line-height:1.7"><span data-lang="en">Happy with your sitter? Confirm with us and we will arrange payment with you. You pay nothing until you are happy with the match.</span><span data-lang="es">¿Satisfecho con tu cuidador? Confírmalo con nosotros y acordaremos el pago contigo. No pagas nada hasta que estés contento con la asignación.</span><span data-lang="ru">Довольны ситтером? Подтвердите у нас, и мы согласуем с вами оплату. Вы ничего не платите, пока не будете довольны выбором.</span><span data-lang="de">Zufrieden mit deinem Sitter? Bestätige bei uns und wir vereinbaren die Zahlung mit dir. Du zahlst erst, wenn du mit dem Match zufrieden bist.</span></p></div>
+      </div>      <div style="display:flex;gap:20px;padding-bottom:28px">
+        <div style="width:54px;height:54px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Lora',serif;font-size:17px;font-weight:600;flex-shrink:0;position:relative;z-index:1">5</div>
+        <div style="padding-top:9px"><h4 style="font-size:15px;font-weight:500;margin-bottom:5px"><span data-lang="en">Daily updates & happy pick-up</span><span data-lang="es">Actualizaciones diarias y recogida feliz</span><span data-lang="ru">Ежедневные обновления и счастливый забор</span><span data-lang="de">Tägliche Updates & glückliche Abholung</span></h4><p style="font-size:13px;color:var(--text-mid);line-height:1.7"><span data-lang="en">Receive daily photos and messages. Collect your pet at the agreed time — and leave a review. See you next time! 🐾</span><span data-lang="es">Recibe fotos y mensajes diarios. Recoge a tu mascota a la hora acordada y deja una reseña. Hasta la próxima! 🐾</span><span data-lang="ru">Получайте ежедневные фото. Заберите питомца в условленное время и оставьте отзыв. До следующего раза! 🐾</span><span data-lang="de">Tägliche Fotos erhalten. Tier zur vereinbarten Zeit abholen und Bewertung hinterlassen. Bis zum nächsten Mal! 🐾</span></p></div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:40px"><a href="#book" class="btn-primary"><span data-lang="en">Start my first booking →</span><span data-lang="es">Iniciar mi primera reserva →</span><span data-lang="ru">Начать первое бронирование →</span><span data-lang="de">Meine erste Buchung starten →</span></a></div>
+</section>
+
+
+
+
+
+
+
+
+<section style="background:var(--sand);padding:76px 5%" id="earn-with-us">
+  <div class="section-tag"><span data-lang="en">Earn with PawStay</span><span data-lang="es">Gana con PawStay</span><span data-lang="ru">Зарабатывайте с PawStay</span><span data-lang="de">Mit PawStay verdienen</span></div>
+  <h2 class="section-title"><span data-lang="en">Why sitters choose PawStay</span><span data-lang="es">Por qué los cuidadores eligen PawStay</span><span data-lang="ru">Почему ситтеры выбирают PawStay</span><span data-lang="de">Warum Sitter PawStay wählen</span></h2>
+  <p class="section-subtitle"><span data-lang="en">Love animals? Earn extra income doing what you love. Set your own schedule, work from home and get paid to care for pets in your area.</span><span data-lang="es">¿Te encantan los animales? Gana ingresos extra haciendo lo que te gusta. Pon tu propio horario y trabaja desde casa.</span><span data-lang="ru">Любите животных? Зарабатывайте дополнительный доход, занимаясь любимым делом. Гибкий график, работа из дома.</span><span data-lang="de">Liebst du Tiere? Verdiene Zusatzeinkommen mit dem was du liebst. Eigener Zeitplan, von zuhause arbeiten.</span></p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:48px">
+    <div style="background:var(--white);border-radius:var(--radius-lg);padding:24px;border:1px solid var(--sand-dark)"><div style="font-size:32px;margin-bottom:12px">💰</div><h4 style="font-family:'Lora',serif;font-size:16px;font-weight:600;margin-bottom:6px"><span data-lang="en">Keep 80% of every booking</span><span data-lang="es">Quédate el 80% de cada reserva</span><span data-lang="ru">Сохраняете 80% каждого бронирования</span><span data-lang="de">80% jeder Buchung behalten</span></h4><p style="font-size:13px;color:var(--text-mid)"><span data-lang="en">PawStay takes a flat 20% to find clients and run the platform.</span><span data-lang="es">PawStay se queda un 20% fijo por encontrar clientes y mantener la plataforma.</span><span data-lang="ru">PawStay берёт фиксированные 20% за поиск клиентов и работу платформы.</span><span data-lang="de">PawStay nimmt pauschal 20 % für Kundengewinnung und Plattformbetrieb.</span></p></div>
+    <div style="background:var(--white);border-radius:var(--radius-lg);padding:24px;border:1px solid var(--sand-dark)"><div style="font-size:32px;margin-bottom:12px">📅</div><h4 style="font-family:'Lora',serif;font-size:16px;font-weight:600;margin-bottom:6px"><span data-lang="en">Flexible schedule</span><span data-lang="es">Horario flexible</span><span data-lang="ru">Гибкий график</span><span data-lang="de">Flexibler Zeitplan</span></h4><p style="font-size:13px;color:var(--text-mid)"><span data-lang="en">Accept bookings when it suits you. Block off dates anytime.</span><span data-lang="es">Acepta reservas cuando quieras. Bloquea fechas en cualquier momento.</span><span data-lang="ru">Принимайте заказы когда удобно. Блокируйте даты в любое время.</span><span data-lang="de">Buchungen annehmen wann es passt. Daten jederzeit sperren.</span></p></div>
+    <div style="background:var(--white);border-radius:var(--radius-lg);padding:24px;border:1px solid var(--sand-dark)"><div style="font-size:32px;margin-bottom:12px">✅</div><h4 style="font-family:'Lora',serif;font-size:16px;font-weight:600;margin-bottom:6px"><span data-lang="en">Free to join</span><span data-lang="es">Gratis unirse</span><span data-lang="ru">Бесплатное участие</span><span data-lang="de">Kostenlos beitreten</span></h4><p style="font-size:13px;color:var(--text-mid)"><span data-lang="en">No sign-up fees or monthly costs. You only pay our 20% when you get a booking.</span><span data-lang="es">Sin cuotas de alta ni costes mensuales. Solo pagas nuestro 20% cuando recibes una reserva.</span><span data-lang="ru">Без вступительных взносов и ежемесячных платежей. Вы платите наши 20% только когда получаете заказ.</span><span data-lang="de">Keine Anmeldegebühren oder Monatskosten. Du zahlst unsere 20 % nur, wenn du eine Buchung erhältst.</span></p></div>
+    <div style="background:var(--white);border-radius:var(--radius-lg);padding:24px;border:1px solid var(--sand-dark)"><div style="font-size:32px;margin-bottom:12px">📲</div><h4 style="font-family:'Lora',serif;font-size:16px;font-weight:600;margin-bottom:6px"><span data-lang="en">Bookings come to you</span><span data-lang="es">Las reservas llegan a ti</span><span data-lang="ru">Заказы приходят к вам</span><span data-lang="de">Buchungen kommen zu dir</span></h4><p style="font-size:13px;color:var(--text-mid)"><span data-lang="en">No marketing needed. PawStay finds clients for you.</span><span data-lang="es">Sin marketing. PawStay encuentra clientes por ti.</span><span data-lang="ru">Никакого маркетинга. PawStay находит клиентов для вас.</span><span data-lang="de">Kein Marketing nötig. PawStay findet Kunden für dich.</span></p></div>
+  </div>
+  <div style="text-align:center;margin-top:40px"><a href="#" onclick="openApply();return false;" class="btn-primary"><span data-lang="en">Apply to join →</span><span data-lang="es">Solicitar unirse →</span><span data-lang="ru">Подать заявку →</span><span data-lang="de">Jetzt bewerben →</span></a></div>
+</section>
+
+
+
+<section class="faq" id="faq">
+  <div class="section-tag reveal">FAQ</div>
+  <h2 class="section-title reveal"><span data-lang="en">Common questions</span><span data-lang="es">Preguntas frecuentes</span><span data-lang="ru">Частые вопросы</span><span data-lang="de">Häufige Fragen</span></h2>
+  <div class="faq-list">
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span data-lang="en">Are all sitters vetted?</span><span data-lang="es">¿Están todos los cuidadores verificados?</span><span data-lang="ru">Все ли ситтеры проверены?</span><span data-lang="de">Sind alle Sitter geprüft?</span><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p><span data-lang="en">Yes. Every sitter on PawStay goes through a personal interview, reference checks and a background check before being approved.</span><span data-lang="es">Sí. Cada cuidador de PawStay pasa por una entrevista personal, verificación de referencias y comprobación de antecedentes antes de ser aprobado.</span><span data-lang="ru">Да. Каждый ситтер PawStay проходит личное собеседование, проверку рекомендаций и проверку биографических данных перед одобрением.</span><span data-lang="de">Ja. Jeder Sitter bei PawStay durchläuft ein persönliches Interview, Referenzprüfungen und einen Hintergrundcheck, bevor er freigeschaltet wird.</span></p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span data-lang="en">Which areas do you cover?</span><span data-lang="es">¿Qué zonas cubren?</span><span data-lang="ru">Какие районы вы обслуживаете?</span><span data-lang="de">Welche Gebiete deckt ihr ab?</span><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p><span data-lang="en">We cover Marbella (including Puerto Banús), Nueva Andalucía, Estepona and Mijas. If your area isn't covered yet, send us an enquiry and we'll let you know as soon as a sitter is available near you.</span><span data-lang="es">Cubrimos Marbella (incluido Puerto Banús), Nueva Andalucía, Estepona y Mijas. Si tu zona aún no está cubierta, envíanos una consulta y te avisaremos en cuanto haya un cuidador cerca.</span><span data-lang="ru">Мы работаем в Марбелье (включая Пуэрто-Банус), Нуэве-Андалусии, Эстепоне и Михасе. Если вашего района пока нет, отправьте запрос, и мы сообщим, как только появится ситтер рядом.</span><span data-lang="de">Wir sind in Marbella (inkl. Puerto Banús), Nueva Andalucía, Estepona und Mijas aktiv. Ist dein Gebiet noch nicht abgedeckt, sende uns eine Anfrage und wir melden uns, sobald ein Sitter in deiner Nähe verfügbar ist.</span></p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span data-lang="en">Can I meet the sitter before booking?</span><span data-lang="es">¿Puedo conocer al cuidador antes?</span><span data-lang="ru">Могу ли я познакомиться с ситтером до бронирования?</span><span data-lang="de">Kann ich den Sitter vor der Buchung kennenlernen?</span><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p><span data-lang="en">Absolutely — we encourage it. Once you submit a booking request, we'll arrange a free meet-and-greet at your sitter's home so your pet can explore the space and you can ask any questions. Only once you're happy do you confirm and pay.</span><span data-lang="es">Por supuesto — te lo recomendamos. Una vez enviada la solicitud, organizamos un encuentro gratuito en el hogar del cuidador para que tu mascota explore el espacio y puedas hacer preguntas. Solo confirmas y pagas cuando estés satisfecho.</span><span data-lang="ru">Конечно — мы это рекомендуем. После отправки заявки мы организуем бесплатное знакомство в доме ситтера, чтобы ваш питомец мог осмотреться, а вы задать вопросы. Подтверждаете и платите только когда довольны.</span><span data-lang="de">Absolut — wir empfehlen es sogar. Nach einer Buchungsanfrage arrangieren wir ein kostenloses Kennenlernen im Zuhause des Sitters. Nur wenn du zufrieden bist, bestätigst du und zahlst.</span></p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span data-lang="en">How does payment work?</span><span data-lang="es">¿Cómo funciona el pago?</span><span data-lang="ru">Как работает оплата?</span><span data-lang="de">Wie funktioniert die Zahlung?</span><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p><span data-lang="en">You pay nothing when you send a request. After your free meet & greet, once you are happy, we confirm the booking and arrange payment with you. Cancellations at least 48 hours before the start of the stay are fully refunded.</span><span data-lang="es">No pagas nada al enviar la solicitud. Tras el encuentro previo gratuito, cuando estés satisfecho, confirmamos la reserva y acordamos el pago contigo. Las cancelaciones con al menos 48 horas de antelación al inicio de la estancia se reembolsan íntegramente.</span><span data-lang="ru">При отправке заявки вы ничего не платите. После бесплатного знакомства, когда вы довольны, мы подтверждаем бронирование и согласуем с вами оплату. Отмена не позднее чем за 48 часов до начала визита — полный возврат.</span><span data-lang="de">Bei der Anfrage zahlst du nichts. Nach dem kostenlosen Kennenlernen, wenn du zufrieden bist, bestätigen wir die Buchung und vereinbaren die Zahlung mit dir. Stornierungen mindestens 48 Stunden vor Beginn des Aufenthalts werden vollständig erstattet.</span></p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span data-lang="en">What happens in an emergency?</span><span data-lang="es">¿Qué pasa si hay una emergencia?</span><span data-lang="ru">Что происходит в случае чрезвычайной ситуации?</span><span data-lang="de">Was passiert im Notfall?</span><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p><span data-lang="en">Before each stay we note your vet's details and your emergency instructions. If something happens, the sitter contacts you straight away and takes your pet to your vet or the nearest emergency clinic.</span><span data-lang="es">Antes de cada estancia anotamos los datos de tu veterinario y tus instrucciones de emergencia. Si ocurre algo, el cuidador te contacta de inmediato y lleva a tu mascota a tu veterinario o a la clínica de urgencias más cercana.</span><span data-lang="ru">Перед каждым визитом мы записываем контакты вашего ветеринара и ваши инструкции на экстренный случай. Если что-то случится, ситтер сразу свяжется с вами и отвезёт питомца к вашему ветеринару или в ближайшую круглосуточную клинику.</span><span data-lang="de">Vor jedem Aufenthalt notieren wir die Daten deines Tierarztes und deine Notfallanweisungen. Wenn etwas passiert, meldet sich der Sitter sofort bei dir und bringt dein Tier zu deinem Tierarzt oder in die nächste Notfallklinik.</span></p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span data-lang="en">What pets do you accept?</span><span data-lang="es">¿Qué mascotas aceptan?</span><span data-lang="ru">Каких животных вы принимаете?</span><span data-lang="de">Welche Tiere nehmt ihr an?</span><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p><span data-lang="en">We care for dogs, cats, rabbits, birds, guinea pigs and other small animals. For exotic animals or pets with complex medical needs, please contact us directly so we can match you with a sitter with specialist experience.</span><span data-lang="es">Cuidamos perros, gatos, conejos, pájaros, cobayas y otros animales pequeños. Para animales exóticos o mascotas con necesidades médicas complejas, contáctanos directamente para encontrar un cuidador con experiencia especializada.</span><span data-lang="ru">Мы ухаживаем за собаками, кошками, кроликами, птицами, морскими свинками и другими мелкими животными. Для экзотических животных или питомцев со сложными медицинскими потребностями свяжитесь с нами напрямую.</span><span data-lang="de">Wir betreuen Hunde, Katzen, Kaninchen, Vögel, Meerschweinchen und andere Kleintiere. Für Exoten oder Tiere mit komplexen medizinischen Bedürfnissen kontaktiere uns direkt, damit wir einen Sitter mit entsprechender Erfahrung finden.</span></p></div></div>
+  </div>
+</section>
+
+
+<footer>
+  <!-- Footer quick links bar -->
+  <div style="border-bottom:1px solid rgba(255,255,255,.08);padding:20px 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+    <div style="font-family:'Lora',serif;font-size:16px;font-weight:600;color:#a8d8c0">PawStay</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <a href="#book" style="background:#1a6b4a;color:#fff;padding:9px 20px;border-radius:20px;font-size:13px;font-weight:500;text-decoration:none"><span data-lang="en">Book now</span><span data-lang="es">Reservar</span><span data-lang="ru">Записаться</span><span data-lang="de">Buchen</span></a>
+      <a href="#sitter-directory" style="background:rgba(255,255,255,.08);color:rgba(255,255,255,.8);padding:9px 20px;border-radius:20px;font-size:13px;text-decoration:none;border:1px solid rgba(255,255,255,.12)"><span data-lang="en">Find a sitter</span><span data-lang="es">Buscar cuidador</span><span data-lang="ru">Найти ситтера</span><span data-lang="de">Sitter finden</span></a>
+      <a href="#earn-with-us" style="background:rgba(255,255,255,.08);color:rgba(255,255,255,.8);padding:9px 20px;border-radius:20px;font-size:13px;text-decoration:none;border:1px solid rgba(255,255,255,.12)"><span data-lang="en">Become a sitter</span><span data-lang="es">Ser cuidador</span><span data-lang="ru">Стать ситтером</span><span data-lang="de">Sitter werden</span></a>
+      <a href="#faq" style="background:rgba(255,255,255,.08);color:rgba(255,255,255,.8);padding:9px 20px;border-radius:20px;font-size:13px;text-decoration:none;border:1px solid rgba(255,255,255,.12)">FAQ</a>
+    </div>
+  </div>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="font-family:'Lora',serif;font-size:21px;font-weight:600;color:#a8d8c0">PawStay</div>
+      <p><span data-lang="en">Your pet's home away from home. Trusted pet sitting across Costa del Sol.</span><span data-lang="es">El hogar de tu mascota lejos de casa. Cuidado de mascotas en toda la Costa del Sol.</span><span data-lang="ru">Дом для вашего питомца вдали от дома. Надёжный уход по всей Коста-дель-Соль.</span><span data-lang="de">Ein Zuhause auf Zeit für dein Tier. Vertrauenswürdige Tierbetreuung an der Costa del Sol.</span></p>
+    </div>
+    <div class="footer-col"><h4><span data-lang="en">Services</span><span data-lang="es">Servicios</span><span data-lang="ru">Услуги</span><span data-lang="de">Services</span></h4><ul><li><a href="#services"><span data-lang="en">Home boarding</span><span data-lang="es">Alojamiento</span><span data-lang="ru">Передержка</span><span data-lang="de">Heimboarding</span></a></li><li><a href="#services"><span data-lang="en">Day care</span><span data-lang="es">Guardería</span><span data-lang="ru">Дневной уход</span><span data-lang="de">Tagesbetreuung</span></a></li><li><a href="#services"><span data-lang="en">Dog walking</span><span data-lang="es">Paseos</span><span data-lang="ru">Выгул</span><span data-lang="de">Gassigehen</span></a></li><li><a href="#services"><span data-lang="en">Home visits</span><span data-lang="es">Visitas</span><span data-lang="ru">Визиты</span><span data-lang="de">Hausbesuche</span></a></li><li><a href="#services"><span data-lang="en">Pet taxi</span><span data-lang="es">Taxi</span><span data-lang="ru">Такси</span><span data-lang="de">Tiertaxi</span></a></li></ul></div>
+    <div class="footer-col"><h4><span data-lang="en">Quick links</span><span data-lang="es">Accesos rápidos</span><span data-lang="ru">Быстрые ссылки</span><span data-lang="de">Schnelllinks</span></h4><ul>
+<li><a href="#how-it-works"><span data-lang="en">How it works</span><span data-lang="es">Cómo funciona</span><span data-lang="ru">Как это работает</span><span data-lang="de">Wie es funktioniert</span></a></li>
+<li><a href="#sitter-directory"><span data-lang="en">Find a sitter</span><span data-lang="es">Buscar cuidador</span><span data-lang="ru">Найти ситтера</span><span data-lang="de">Sitter finden</span></a></li>
+<li><a href="#areas"><span data-lang="en">Coverage areas</span><span data-lang="es">Zonas</span><span data-lang="ru">Районы</span><span data-lang="de">Gebiete</span></a></li>
+<li><a href="#safety"><span data-lang="en">Trust & safety</span><span data-lang="es">Confianza</span><span data-lang="ru">Безопасность</span><span data-lang="de">Sicherheit</span></a></li>
+<li><a href="#earn-with-us"><span data-lang="en">Become a sitter</span><span data-lang="es">Ser cuidador</span><span data-lang="ru">Стать ситтером</span><span data-lang="de">Sitter werden</span></a></li>
+<li><a href="#faq">FAQ</a></li>
+</ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:kkamskaya8@gmail.com">kkamskaya8@gmail.com</a></li><li><a href="tel:+421908988260">+421908988260</a></li><li style="color:rgba(255,255,255,.4);font-size:13px;margin-top:6px">Mon–Sun 8am–9pm</li><li style="color:rgba(255,255,255,.4);font-size:13px">Marbella, España</li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 PAW STAY S.L. · <a href="#" onclick="openPolicy('legal');return false;" style="color:rgba(255,255,255,.4);text-decoration:none"><span data-lang="en">Legal notice</span><span data-lang="es">Aviso legal</span><span data-lang="ru">Правовая информация</span><span data-lang="de">Impressum</span></a> · <a href="#" onclick="openPolicy('privacy');return false;" style="color:rgba(255,255,255,.4);text-decoration:none"><span data-lang="en">Privacy Policy</span><span data-lang="es">Privacidad</span><span data-lang="ru">Конфиденциальность</span><span data-lang="de">Datenschutz</span></a> · <a href="#" onclick="openPolicy('terms');return false;" style="color:rgba(255,255,255,.4);text-decoration:none"><span data-lang="en">Terms</span><span data-lang="es">Términos</span><span data-lang="ru">Условия</span><span data-lang="de">AGB</span></a> · <a href="#" onclick="openPolicy('cookies');return false;" style="color:rgba(255,255,255,.4);text-decoration:none"><span data-lang="en">Cookies</span><span data-lang="es">Cookies</span><span data-lang="ru">Cookies</span><span data-lang="de">Cookies</span></a></p>
+    <div style="display:flex;gap:8px"><button class="lang-btn active" onclick="setLang('en')">EN</button><button class="lang-btn" onclick="setLang('es')">ES</button><button class="lang-btn" onclick="setLang('ru')">RU</button></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="booking-modal"><div class="modal"><button class="modal-close" onclick="closeModal('booking-modal')" aria-label="Close">✕</button><div class="success-msg"><div class="success-icon">🐾</div><div id="bm-sent"><h3 style="font-family:'Lora',serif"><span data-lang="en">Request received!</span><span data-lang="es">¡Solicitud recibida!</span><span data-lang="ru">Заявка получена!</span><span data-lang="de">Anfrage erhalten!</span></h3><p style="margin-top:10px;font-size:14px;color:var(--text-mid);line-height:1.7"><span data-lang="en">We'll contact you within 24 hours with matching sitters. For a faster reply, message us on WhatsApp.</span><span data-lang="es">Te contactaremos en 24 horas con cuidadores adecuados. Para una respuesta más rápida, escríbenos por WhatsApp.</span><span data-lang="ru">Мы свяжемся с вами в течение 24 часов с подходящими ситтерами. Для быстрого ответа напишите нам в WhatsApp.</span><span data-lang="de">Wir melden uns innerhalb von 24 Stunden mit passenden Sittern. Für eine schnellere Antwort schreib uns auf WhatsApp.</span></p></div><div id="bm-wa" style="display:none"><h3 style="font-family:'Lora',serif"><span data-lang="en">One last step</span><span data-lang="es">Un último paso</span><span data-lang="ru">Остался последний шаг</span><span data-lang="de">Noch ein letzter Schritt</span></h3><p style="margin-top:10px;font-size:14px;color:var(--text-mid);line-height:1.7"><span data-lang="en">Tap the button to send your request to us on WhatsApp. It takes a second, and we'll reply with matching sitters within 24 hours.</span><span data-lang="es">Pulsa el botón para enviarnos tu solicitud por WhatsApp. Tarda un segundo y te responderemos con cuidadores en 24 horas.</span><span data-lang="ru">Нажмите кнопку, чтобы отправить заявку нам в WhatsApp. Это займёт секунду, и мы ответим с подходящими ситтерами в течение 24 часов.</span><span data-lang="de">Tippe auf die Schaltfläche, um uns deine Anfrage per WhatsApp zu senden. Das dauert eine Sekunde, und wir antworten innerhalb von 24 Stunden mit passenden Sittern.</span></p></div><a id="bm-wa-btn" class="btn-primary" href="#" target="_blank" rel="noopener" style="margin-top:20px;display:inline-flex;align-items:center;gap:8px">💬 <span data-lang="en">Send on WhatsApp</span><span data-lang="es">Enviar por WhatsApp</span><span data-lang="ru">Отправить в WhatsApp</span><span data-lang="de">Per WhatsApp senden</span></a><p style="margin-top:14px;font-size:12px;color:var(--text-soft)"><span data-lang="en">Prefer email?</span><span data-lang="es">¿Prefieres email?</span><span data-lang="ru">Предпочитаете email?</span><span data-lang="de">Lieber per E-Mail?</span> <a id="bm-mail" href="#" style="color:var(--green);text-decoration:underline">kkamskaya8@gmail.com</a></p></div></div></div>
+<div class="modal-overlay" id="sitter-modal"><div class="modal"><button class="modal-close" onclick="closeModal('sitter-modal')" aria-label="Close">✕</button><div class="success-msg"><div class="success-icon"><span style="color:#1a6b4a;font-weight:700">✓</span></div><div id="sm-sent"><h3 style="font-family:'Lora',serif"><span data-lang="en">Application received!</span><span data-lang="es">¡Solicitud recibida!</span><span data-lang="ru">Заявка получена!</span><span data-lang="de">Bewerbung erhalten!</span></h3><p style="margin-top:10px;font-size:14px;color:var(--text-mid);line-height:1.7"><span data-lang="en">Thanks for your interest in joining PawStay. We'll review your application and be in touch within 24 hours to arrange a quick call.<br/><br/>We look forward to welcoming you to the team 🐾</span><span data-lang="es">Gracias por tu interés en unirte a PawStay. Revisaremos tu solicitud y nos pondremos en contacto en 24 horas para organizar una breve llamada.<br/><br/>¡Esperamos darte la bienvenida al equipo 🐾</span><span data-lang="ru">Спасибо за интерес к PawStay. Мы рассмотрим вашу заявку и свяжемся в течение 24 часов для короткого звонка.<br/><br/>Ждём вас в нашей команде 🐾</span><span data-lang="de">Danke für dein Interesse, PawStay beizutreten. Wir prüfen deine Bewerbung und melden uns innerhalb von 24 Stunden für ein kurzes Gespräch.<br/><br/>Wir freuen uns darauf, dich im Team willkommen zu heißen 🐾</span></p></div><div id="sm-wa" style="display:none"><h3 style="font-family:'Lora',serif"><span data-lang="en">One last step</span><span data-lang="es">Un último paso</span><span data-lang="ru">Остался последний шаг</span><span data-lang="de">Noch ein letzter Schritt</span></h3><p style="margin-top:10px;font-size:14px;color:var(--text-mid);line-height:1.7"><span data-lang="en">Tap the button to send your application to us on WhatsApp so we get it straight away. We'll be in touch within 24 hours.</span><span data-lang="es">Pulsa el botón para enviarnos tu solicitud por WhatsApp y recibirla de inmediato. Nos pondremos en contacto en 24 horas.</span><span data-lang="ru">Нажмите кнопку, чтобы отправить заявку нам в WhatsApp — так мы получим её сразу. Мы свяжемся с вами в течение 24 часов.</span><span data-lang="de">Tippe auf die Schaltfläche, um uns deine Bewerbung per WhatsApp zu senden, damit wir sie sofort erhalten. Wir melden uns innerhalb von 24 Stunden.</span></p></div><a id="sm-wa-btn" class="btn-primary" href="#" target="_blank" rel="noopener" style="margin-top:20px;display:inline-flex;align-items:center;gap:8px">💬 <span data-lang="en">Send on WhatsApp</span><span data-lang="es">Enviar por WhatsApp</span><span data-lang="ru">Отправить в WhatsApp</span><span data-lang="de">Per WhatsApp senden</span></a><p style="margin-top:14px;font-size:12px;color:var(--text-soft)"><span data-lang="en">Prefer email?</span><span data-lang="es">¿Prefieres email?</span><span data-lang="ru">Предпочитаете email?</span><span data-lang="de">Lieber per E-Mail?</span> <a id="sm-mail" href="#" style="color:var(--green);text-decoration:underline">kkamskaya8@gmail.com</a></p></div></div></div>
+<div class="modal-overlay" id="apply-modal"><div class="modal" style="max-width:520px"><button class="modal-close" onclick="closeModal('apply-modal')" aria-label="Close">✕</button>
+<h3 style="font-family:'Lora',serif;font-size:22px;margin-bottom:6px"><span data-lang="en">Apply to become a founding sitter</span><span data-lang="es">Solicita ser cuidador fundador</span><span data-lang="ru">Подайте заявку на роль ситтера-основателя</span><span data-lang="de">Bewirb dich als Gründungs-Sitter</span></h3>
+<p style="font-size:13px;color:var(--text-soft);margin-bottom:18px"><span data-lang="en">Takes 2 minutes. Free to join. We reply within 24 hours.</span><span data-lang="es">Solo 2 minutos. Gratis. Respondemos en 24 horas.</span><span data-lang="ru">Займёт 2 минуты. Бесплатно. Ответим в течение 24 часов.</span><span data-lang="de">Dauert 2 Minuten. Kostenlos. Wir antworten innerhalb von 24 Stunden.</span></p>
+<div class="form-group"><label class="form-label" for="ap-name"><span data-lang="en">Full name</span><span data-lang="es">Nombre completo</span><span data-lang="ru">Имя и фамилия</span><span data-lang="de">Vollständiger Name</span></label><input type="text" class="form-input" id="ap-name" autocomplete="name"/></div><div class="form-row"><div class="form-group"><label class="form-label" for="ap-email">Email</label><input type="email" class="form-input" id="ap-email" autocomplete="email"/></div><div class="form-group"><label class="form-label" for="ap-phone"><span data-lang="en">WhatsApp / phone</span><span data-lang="es">WhatsApp / teléfono</span><span data-lang="ru">WhatsApp / телефон</span><span data-lang="de">WhatsApp / Telefon</span></label><input type="tel" class="form-input" id="ap-phone" autocomplete="tel"/></div></div>
+<div class="form-group"><label class="form-label" for="ap-area"><span data-lang="en">Your area</span><span data-lang="es">Tu zona</span><span data-lang="ru">Ваш район</span><span data-lang="de">Dein Gebiet</span></label><select class="form-select" id="ap-area"><option value=""></option><option>Estepona</option><option>Nueva Andalucía</option><option>Marbella (incl. Puerto Banús)</option><option>Mijas</option><option>Other · Otra · Другой · Andere</option></select></div>
+<div class="form-group"><label class="form-label"><span data-lang="en">Pets you can look after</span><span data-lang="es">Mascotas que puedes cuidar</span><span data-lang="ru">За кем вы готовы ухаживать</span><span data-lang="de">Welche Tiere kannst du betreuen</span></label><div style="display:flex;gap:16px;flex-wrap:wrap;font-size:13px"><label style="display:flex;gap:6px;align-items:center;cursor:pointer"><input type="checkbox" class="ap-pet" value="Dogs"/> <span data-lang="en">Dogs</span><span data-lang="es">Perros</span><span data-lang="ru">Собаки</span><span data-lang="de">Hunde</span></label><label style="display:flex;gap:6px;align-items:center;cursor:pointer"><input type="checkbox" class="ap-pet" value="Cats"/> <span data-lang="en">Cats</span><span data-lang="es">Gatos</span><span data-lang="ru">Кошки</span><span data-lang="de">Katzen</span></label><label style="display:flex;gap:6px;align-items:center;cursor:pointer"><input type="checkbox" class="ap-pet" value="Small animals"/> <span data-lang="en">Small animals</span><span data-lang="es">Animales pequeños</span><span data-lang="ru">Мелкие животные</span><span data-lang="de">Kleintiere</span></label></div></div>
+<div class="form-group"><label class="form-label" for="ap-home"><span data-lang="en">Your home</span><span data-lang="es">Tu hogar</span><span data-lang="ru">Ваше жильё</span><span data-lang="de">Dein Zuhause</span></label><select class="form-select" id="ap-home"><option value=""></option><option value="Flat">Flat · Piso · Квартира · Wohnung</option><option value="Flat with terrace/balcony">Flat with terrace · Piso con terraza · Квартира с террасой · Wohnung mit Terrasse</option><option value="House with garden">House with garden · Casa con jardín · Дом с садом · Haus mit Garten</option></select></div>
+<div class="form-group"><label class="form-label" for="ap-langs"><span data-lang="en">Languages you speak</span><span data-lang="es">Idiomas que hablas</span><span data-lang="ru">Языки, на которых вы говорите</span><span data-lang="de">Sprachen, die du sprichst</span></label><input type="text" class="form-input" id="ap-langs" placeholder="English, Español, Русский, Deutsch…"/></div>
+<div class="form-group"><label class="form-label" for="ap-about"><span data-lang="en">Your experience with animals</span><span data-lang="es">Tu experiencia con animales</span><span data-lang="ru">Ваш опыт с животными</span><span data-lang="de">Deine Erfahrung mit Tieren</span></label><textarea class="form-textarea" id="ap-about"></textarea></div>
+<label style="display:flex;gap:10px;align-items:flex-start;font-size:12px;color:var(--text-mid);line-height:1.55;margin:6px 0 14px;cursor:pointer"><input type="checkbox" id="ap-consent" style="margin-top:3px;flex-shrink:0"/><span><span data-lang="en">I agree to the <a href="#" onclick="openPolicy('privacy');return false;" style="color:var(--green);text-decoration:underline">Privacy Policy</a> and to PawStay contacting me about my application.</span><span data-lang="es">Acepto la <a href="#" onclick="openPolicy('privacy');return false;" style="color:var(--green);text-decoration:underline">Política de Privacidad</a> y que PawStay me contacte sobre mi solicitud.</span><span data-lang="ru">Я согласен(на) с <a href="#" onclick="openPolicy('privacy');return false;" style="color:var(--green);text-decoration:underline">Политикой конфиденциальности</a> и на то, что PawStay свяжется со мной по моей заявке.</span><span data-lang="de">Ich stimme der <a href="#" onclick="openPolicy('privacy');return false;" style="color:var(--green);text-decoration:underline">Datenschutzerklärung</a> zu und dass PawStay mich zu meiner Bewerbung kontaktiert.</span></span></label>
+<div id="ap-error" role="alert" style="display:none;color:#b3261e;font-size:13px;margin:-4px 0 12px"></div>
+<button class="btn-primary" id="ap-submit" style="width:100%;justify-content:center" onclick="submitApply()"><span data-lang="en">Send application</span><span data-lang="es">Enviar solicitud</span><span data-lang="ru">Отправить заявку</span><span data-lang="de">Bewerbung senden</span></button>
+</div></div>
+
+
+<!-- BOOKING / SITTER MODALS -->
+
+<script>
+/* ===== BOOKING ===== */
+function selectPet(btn){btn.closest('.pet-types').querySelectorAll('.pet-type-btn').forEach(function(b){b.classList.remove('selected');});btn.classList.add('selected');}
+function nextStep(f){document.getElementById('book-step-'+f).classList.remove('active');document.getElementById('step-ind-'+f).classList.remove('active');document.getElementById('step-ind-'+f).classList.add('done');var n=f+1;document.getElementById('book-step-'+n).classList.add('active');document.getElementById('step-ind-'+n).classList.add('active');}
+function prevStep(f){document.getElementById('book-step-'+f).classList.remove('active');document.getElementById('step-ind-'+f).classList.remove('active');var p=f-1;document.getElementById('book-step-'+p).classList.add('active');document.getElementById('step-ind-'+p).classList.remove('done');document.getElementById('step-ind-'+p).classList.add('active');}
+
+/* ===== LANGUAGE ===== */
+function setLang(l){
+  document.body.className='lang-'+l;
+  document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.toggle('active',b.textContent.trim()===l.toUpperCase());});
+  if(typeof calcUpdate==='function')calcUpdate();
+  document.documentElement.lang=l;
+  if(typeof updateWaFab==='function')updateWaFab();
+}
+
+
+
+/* ===== COMPANY DETAILS FOR THE LEGAL NOTICE =====
+   Fill these in when you have them; the lines then appear in the Legal notice automatically.
+   COMPANY_CIF      e.g. 'B12345678'  (the company's tax number, issued after incorporation)
+   COMPANY_REGISTRY e.g. 'Registro Mercantil de Málaga, Tomo 1234, Folio 56, Hoja MA-78901, Inscripción 1ª'  (after registration) */
+var COMPANY_CIF='';
+var COMPANY_REGISTRY='';
+function fillLegal(){
+  [['legal-cif',COMPANY_CIF],['legal-reg',COMPANY_REGISTRY]].forEach(function(p){
+    var row=document.getElementById(p[0]),v=document.getElementById(p[0]+'-val');
+    if(row&&v){ if(p[1]){v.textContent=p[1];row.style.display='inline';} else {row.style.display='none';} }
+  });
+}
+fillLegal();
+
+/* ===== CONTACT + FORM DELIVERY =====
+   FORMSPREE_ID: paste your Formspree form ID here (formspree.io -> your form -> the URL ends /f/XXXXXXXX).
+   While it is empty, requests are sent through the WhatsApp / email buttons instead, so nothing is lost. */
+var FORMSPREE_ID='';
+var WA_NUMBER='421908988260';
+var CONTACT_EMAIL='kkamskaya8@gmail.com';
+
+function val(id){var el=document.getElementById(id);return el?el.value.trim():'';}
+function deliver(subject,data){
+  if(!FORMSPREE_ID)return Promise.resolve(false);
+  data._subject=subject;
+  return fetch('https://formspree.io/f/'+FORMSPREE_ID,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+    .then(function(r){return r.ok;}).catch(function(){return false;});
+}
+function showResult(prefix,modalId,ok,waText,mailSubject){
+  document.getElementById(prefix+'-sent').style.display=ok?'block':'none';
+  document.getElementById(prefix+'-wa').style.display=ok?'none':'block';
+  document.getElementById(prefix+'-wa-btn').href='https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(waText);
+  document.getElementById(prefix+'-mail').href='mailto:'+CONTACT_EMAIL+'?subject='+encodeURIComponent(mailSubject)+'&body='+encodeURIComponent(waText);
+  document.getElementById(modalId).classList.add('open');
+}
+var FORM_ERRORS={
+  book:{en:'Please add your first name, a valid email or phone number, and tick the consent box.',es:'Indica tu nombre, un email válido o teléfono, y marca la casilla de consentimiento.',ru:'Укажите имя, действующий email или телефон и отметьте согласие.',de:'Bitte gib deinen Vornamen, eine gültige E-Mail oder Telefonnummer an und setze das Häkchen bei der Einwilligung.'},
+  apply:{en:'Please add your name, a phone number or valid email, your area, and tick the consent box.',es:'Indica tu nombre, teléfono o email válido, tu zona y marca la casilla de consentimiento.',ru:'Укажите имя, телефон или email, район и отметьте согласие.',de:'Bitte gib Namen, Telefon oder gültige E-Mail, dein Gebiet an und setze das Häkchen bei der Einwilligung.'}
+};
+function validEmail(e){return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e);}
+function formError(id,key){var el=document.getElementById(id);var l=getLang();el.textContent=FORM_ERRORS[key][l]||FORM_ERRORS[key].en;el.style.display='block';}
+
+function resetBooking(){
+  document.querySelectorAll('#book .form-input,#book .form-textarea,#book .form-select').forEach(function(el){el.value='';});
+  var cb=document.getElementById('owner-consent');if(cb)cb.checked=false;
+  document.getElementById('book-step-3').classList.remove('active');
+  for(var i=1;i<=3;i++){document.getElementById('step-ind-'+i).classList.remove('active','done');}
+  document.getElementById('step-ind-1').classList.add('active');
+  document.getElementById('book-step-1').classList.add('active');
+}
+function submitBooking(){
+  var first=val('owner-first'),last=val('owner-last'),email=val('owner-email'),phone=val('owner-phone');
+  var consent=document.getElementById('owner-consent').checked;
+  var contactOk=(email&&validEmail(email))||(!email&&phone.replace(/\D/g,'').length>=6)||(email&&validEmail(email));
+  if(!first||!contactOk||(email&&!validEmail(email))||!consent){formError('book-error','book');return;}
+  document.getElementById('book-error').style.display='none';
+  var sel=document.querySelector('.pet-type-btn.selected');
+  var petType=sel?(sel.querySelector('[data-lang="en"]')||sel).textContent.trim():'';
+  var svcEl=document.getElementById('owner-service');var service=svcEl&&svcEl.value?svcEl.value:'';
+  var d={name:(first+' '+last).trim(),email:email,phone:phone,pet_type:petType,pet_name:val('pet-name'),pet_breed:val('pet-breed'),service:service,area:val('owner-area'),start_date:val('start-date'),end_date:val('end-date'),notes:val('owner-notes'),language:getLang(),form:'owner enquiry'};
+  var wa='Hi PawStay! I would like help finding a sitter.\n\nPet: '+petType+(d.pet_name?' ('+d.pet_name+(d.pet_breed?', '+d.pet_breed:'')+')':'')+'\nService: '+(service||'-')+'\nArea: '+(d.area||'-')+'\nDates: '+(d.start_date||'?')+' to '+(d.end_date||'?')+'\nNotes: '+(d.notes||'-')+'\n\nName: '+d.name+'\nContact: '+(phone||email)+'\nLanguage: '+d.language;
+  var btn=document.querySelector('#book-step-3 .btn-primary');if(btn)btn.disabled=true;
+  deliver('New PawStay enquiry from '+d.name,d).then(function(ok){
+    if(btn)btn.disabled=false;
+    showResult('bm','booking-modal',ok,wa,'PawStay enquiry from '+d.name);
+    resetBooking();
+  });
+}
+function openApply(){document.getElementById('ap-error').style.display='none';document.getElementById('apply-modal').classList.add('open');}
+function submitApply(){
+  var name=val('ap-name'),email=val('ap-email'),phone=val('ap-phone'),area=val('ap-area');
+  var consent=document.getElementById('ap-consent').checked;
+  var contactOk=(email&&validEmail(email))||(!email&&phone.replace(/\D/g,'').length>=6);
+  if(!name||!contactOk||!area||!consent){formError('ap-error','apply');return;}
+  document.getElementById('ap-error').style.display='none';
+  var pets=[].map.call(document.querySelectorAll('.ap-pet:checked'),function(x){return x.value;}).join(', ');
+  var d={name:name,email:email,phone:phone,area:area,pets:pets,home:val('ap-home'),languages:val('ap-langs'),about:val('ap-about'),language:getLang(),form:'sitter application'};
+  var wa='Hi PawStay! I would like to apply as a sitter.\n\nName: '+name+'\nArea: '+area+'\nPets: '+(pets||'-')+'\nHome: '+(d.home||'-')+'\nLanguages: '+(d.languages||'-')+'\nAbout me: '+(d.about||'-')+'\n\nContact: '+(phone||email);
+  var btn=document.getElementById('ap-submit');btn.disabled=true;
+  deliver('New PawStay sitter application from '+name,d).then(function(ok){
+    btn.disabled=false;
+    closeModal('apply-modal');
+    showResult('sm','sitter-modal',ok,wa,'PawStay sitter application from '+name);
+    document.querySelectorAll('#apply-modal input[type=text],#apply-modal input[type=email],#apply-modal input[type=tel],#apply-modal textarea,#apply-modal select').forEach(function(el){el.value='';});
+    document.querySelectorAll('#apply-modal input[type=checkbox]').forEach(function(el){el.checked=false;});
+  });
+}
+
+
+/* ===== WHATSAPP BUTTON ===== */
+var WA_GREETING={en:'Hi PawStay! I have a question about pet sitting.',es:'¡Hola PawStay! Tengo una pregunta sobre el cuidado de mascotas.',ru:'Здравствуйте, PawStay! У меня вопрос об уходе за питомцем.',de:'Hallo PawStay! Ich habe eine Frage zur Tierbetreuung.'};
+var WA_LABEL={en:'Chat on WhatsApp',es:'Chatea por WhatsApp',ru:'Написать в WhatsApp',de:'Per WhatsApp chatten'};
+function waGreeting(){return WA_GREETING[getLang()]||WA_GREETING.en;}
+function waLink(text){return 'https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(text);}
+function updateWaFab(){
+  var l=getLang(),f=document.getElementById('wa-fab');
+  if(f){f.href=waLink(waGreeting());f.setAttribute('aria-label',WA_LABEL[l]||WA_LABEL.en);}
+  var b=document.getElementById('wa-book-link');if(b)b.href=waLink(waGreeting());
+}
+/* keep the button above the sticky bar and the cookie banner whenever they are on screen */
+function positionWaFab(){
+  var f=document.getElementById('wa-fab');if(!f)return;
+  var h=window.innerHeight,minTop=h;
+  ['sticky-bar','cookie-banner'].forEach(function(id){
+    var el=document.getElementById(id);if(!el||el.style.display==='none')return;
+    var r=el.getBoundingClientRect();
+    if(r.height>0&&r.top<h-2&&r.bottom>0)minTop=Math.min(minTop,r.top);
+  });
+  f.style.bottom=(Math.max(0,h-minTop)+18)+'px';
+}
+window.addEventListener('scroll',positionWaFab,{passive:true});
+window.addEventListener('resize',positionWaFab);
+setInterval(positionWaFab,350);
+updateWaFab();positionWaFab();
+
+/* ===== ANALYTICS (loads ONLY after the visitor accepts cookies) =====
+   GA_ID: paste your Google Analytics 4 ID here, e.g. 'G-ABC123XYZ'. While empty, nothing is loaded. */
+var GA_ID='';
+function loadAnalytics(){
+  if(!GA_ID||window.__gaLoaded)return;
+  window.__gaLoaded=true;
+  var s=document.createElement('script');s.async=true;
+  s.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(GA_ID);
+  document.head.appendChild(s);
+  window.dataLayer=window.dataLayer||[];
+  window.gtag=function(){window.dataLayer.push(arguments);};
+  gtag('js',new Date());gtag('config',GA_ID,{anonymize_ip:true});
+}
+try{if(localStorage.getItem('pawstay_cookies')==='accepted')loadAnalytics();}catch(e){}
+
+/* ===== MODALS & UI ===== */
+
+function closeModal(id){document.getElementById(id).classList.remove('open');}
+function toggleFaq(btn){var item=btn.parentElement;var was=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');});if(!was)item.classList.add('open');}
+function toggleMobileMenu(){var l=document.querySelector('.nav-links');var c=document.querySelector('.nav-cta');if(l.style.display==='flex'){l.style.display='';c.style.display='';}else{l.style.cssText='display:flex;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:rgba(247,244,239,.98);padding:20px 5%;border-bottom:1px solid #ede8e0;gap:16px;z-index:99';c.style.cssText='display:block;margin:0 5% 16px;text-align:center';}}
+document.querySelectorAll('.modal-overlay').forEach(function(o){o.addEventListener('click',function(e){if(e.target===this)this.classList.remove('open');});});
+var today=new Date().toISOString().split('T')[0];
+if(document.getElementById('start-date')){document.getElementById('start-date').min=today;document.getElementById('end-date').min=today;document.getElementById('start-date').addEventListener('change',function(){document.getElementById('end-date').min=this.value;});}
+
+/* ===== STICKY BOOK BAR ===== */
+document.addEventListener('DOMContentLoaded',function(){
+  var bar=document.getElementById('sticky-bar');
+  if(!bar)return;
+  var dismissed=false;
+  // Show bar 3 seconds after page load
+  setTimeout(function(){
+    if(!dismissed)bar.style.transform='translateY(0)';
+  },3000);
+  // Hide when book section is visible
+  var book=document.getElementById('book');
+  window.addEventListener('scroll',function(){
+    if(dismissed)return;
+    if(book){
+      var r=book.getBoundingClientRect();
+      if(r.top<window.innerHeight&&r.bottom>0){
+        bar.style.transform='translateY(100%)';
+      } else {
+        var hero=document.getElementById('home');
+        if(hero&&hero.getBoundingClientRect().bottom<0){
+          bar.style.transform='translateY(0)';
+        }
+      }
+    }
+  });
+  // Close
+  var _cb=bar.querySelector('button');if(_cb)_cb.onclick=function(){dismissed=true;bar.style.transform='translateY(100%)';};
+});
+/* ===== COOKIE CONSENT ===== */
+function acceptCookies(){
+  try{localStorage.setItem('pawstay_cookies','accepted');}catch(e){}
+  loadAnalytics();
+  var b=document.getElementById('cookie-banner');
+  if(b){b.style.transform='translateY(100%)';setTimeout(function(){b.style.display='none';},400);}
+}
+function declineCookies(){
+  try{localStorage.setItem('pawstay_cookies','essential');}catch(e){}
+  var b=document.getElementById('cookie-banner');
+  if(b){b.style.transform='translateY(100%)';setTimeout(function(){b.style.display='none';},400);}
+}
+function openPolicy(type){
+  var el=document.getElementById('policy-'+type);
+  if(el)el.classList.add('open');
+}
+function closePolicyModal(id){
+  var el=document.getElementById(id);
+  if(el)el.classList.remove('open');
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var consent=null;
+  try{consent=localStorage.getItem('pawstay_cookies');}catch(e){}
+  if(consent){
+    // Already accepted — hide immediately
+    var b=document.getElementById('cookie-banner');
+    if(b)b.style.display='none';
+  }
+  // Otherwise banner is already visible via CSS
+});
+var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.1,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});
+
+/* ===== MAP ===== */
+function initMap(){
+  var link=document.createElement('link');link.rel='stylesheet';link.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';document.head.appendChild(link);
+  var s=document.createElement('script');s.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+  s.onload=function(){
+    setTimeout(function(){
+      var map=L.map('pawstay-map',{zoomControl:true,scrollWheelZoom:false}).setView([36.52,-4.89],10);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:18}).addTo(map);
+      var icon=L.divIcon({html:'<div style="background:#1a6b4a;width:16px;height:16px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.3)"></div>',iconSize:[16,16],iconAnchor:[8,8],className:''});
+      [{name:'Estepona',lat:36.4256,lng:-5.1510,desc:'Town · New Golden Mile'},{name:'Nueva Andalucía',lat:36.4924,lng:-4.9516,desc:'Golf Valley · Aloha · La Quinta'},{name:'Marbella',lat:36.5103,lng:-4.8853,desc:'Centro · Golden Mile · Puerto Banús'},{name:'Mijas',lat:36.5968,lng:-4.6323,desc:'Mijas Costa · La Cala · Mijas Pueblo'}].forEach(function(a){L.marker([a.lat,a.lng],{icon}).addTo(map).bindPopup('<strong style="color:#1a6b4a;font-family:serif">'+a.name+'</strong><br/><span style="font-size:12px;color:#666">'+a.desc+'</span>');});
+      map.fitBounds([[36.4256,-5.1510],[36.5968,-4.6323]],{padding:[40,40]});
+      map.invalidateSize();
+    },300);
+  };
+  document.head.appendChild(s);
+}
+
+/* Start the map only when the visitor scrolls near it (saves the map library + tiles for everyone else) */
+(function(){
+  var el=document.getElementById('pawstay-map'); if(!el)return;
+  var started=false;
+  function go(){ if(started)return; started=true; initMap(); }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ go(); io.disconnect(); } });
+    },{rootMargin:'600px'});
+    io.observe(el);
+  } else { go(); }
+})();
+
+
+/* ===== PRICE CALCULATOR ===== */
+var calcState={price:30,qty:3,pets:1,unit:'night'};
+var calcUnitLabels={
+  night:{en:'nights',es:'noches',ru:'ночей',de:'Nächte'},
+  day:{en:'days',es:'días',ru:'дней',de:'Tage'},
+  walk:{en:'walks',es:'paseos',ru:'прогулок',de:'Spaziergänge'},
+  halfday:{en:'half-days',es:'medias jornadas',ru:'полдня',de:'Halbtage'},
+  visit:{en:'visits',es:'visitas',ru:'визитов',de:'Besuche'}
+};
+var calcPetsLabel={en:'pets',es:'mascotas',ru:'питомцев',de:'Tiere'};
+var calcExtraPet={night:15,visit:5};
+var calcExtraLabel={en:'extra pet',es:'mascota extra',ru:'доп. питомец',de:'weiteres Tier'};
+var calcAddonsLabel={en:'add-ons',es:'extras',ru:'доп.',de:'Extras'};
+function getLang(){return document.body.className.replace('lang-','');}
+function calcSelectService(btn){
+  document.querySelectorAll('.calc-service-btn').forEach(function(b){b.classList.remove('selected');});
+  btn.classList.add('selected');
+  calcState.price=parseInt(btn.dataset.price);
+  calcState.unit=btn.dataset.unit;
+  calcUpdate();
+}
+function calcQty(d){calcState.qty=Math.max(1,Math.min(60,calcState.qty+d));document.getElementById('calc-qty').textContent=calcState.qty;calcUpdate();}
+function calcPets(d){calcState.pets=Math.max(1,Math.min(6,calcState.pets+d));document.getElementById('calc-pets').textContent=calcState.pets;calcUpdate();}
+function calcUpdate(){
+  var lang=getLang();
+  var unitLabel=calcUnitLabels[calcState.unit]?calcUnitLabels[calcState.unit][lang]||calcUnitLabels[calcState.unit]['en']:calcState.unit+'s';
+  document.getElementById('calc-unit-label').textContent=unitLabel;
+  var extra=Math.max(0,calcState.pets-1);
+  var perExtra=calcExtraPet[calcState.unit];
+  var base, text;
+  if(perExtra!==undefined){
+    base=(calcState.price+extra*perExtra)*calcState.qty;
+    text=calcState.qty+' '+unitLabel+' × €'+calcState.price;
+    if(extra>0) text+=' + '+extra+' × '+(calcExtraLabel[lang]||'extra pet')+' (€'+perExtra+' × '+calcState.qty+' '+unitLabel+')';
+  } else {
+    base=calcState.price*calcState.qty*calcState.pets;
+    var petsLabel=calcState.pets>1?' × '+calcState.pets+' '+(calcPetsLabel[lang]||'pets'):'';
+    text=calcState.qty+' '+unitLabel+petsLabel+' × €'+calcState.price;
+  }
+  var addons=0;
+  document.querySelectorAll('.calc-addon.active').forEach(function(a){addons+=parseInt(a.dataset.price);});
+  document.getElementById('calc-total').textContent=base+addons;
+  if(addons>0) text+=' + €'+addons+' '+(calcAddonsLabel[lang]||'add-ons');
+  document.getElementById('calc-breakdown').textContent=text;
+}
+
+</script>
+
+<!-- WHATSAPP BUTTON -->
+<a id="wa-fab" class="wa-fab" href="https://wa.me/421908988260" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" onclick="this.href=waLink(waGreeting())"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span class="wa-fab-label"><span data-lang="en">Chat on WhatsApp</span><span data-lang="es">Chatea por WhatsApp</span><span data-lang="ru">Написать в WhatsApp</span><span data-lang="de">Per WhatsApp chatten</span></span></a>
+
+<!-- STICKY BOOK BAR -->
+<div class="sticky-bar" id="sticky-bar">
+  <div class="sticky-bar-left">
+    <div style="font-size:28px">🐾</div>
+    <div>
+      <div class="sticky-bar-title"><span data-lang="en">Ready to find a sitter?</span><span data-lang="es">¿Listo para encontrar un cuidador?</span><span data-lang="ru">Готовы найти ситтера?</span><span data-lang="de">Bereit einen Sitter zu finden?</span></div>
+      <div class="sticky-bar-sub"><span data-lang="en">From €30/night · Verified sitters · Costa del Sol</span><span data-lang="es">Desde €30/noche · Cuidadores verificados · Costa del Sol</span><span data-lang="ru">От €30/ночь · Проверенные ситтеры · Коста-дель-Соль</span><span data-lang="de">Ab €30/Nacht · Geprüfte Sitter · Costa del Sol</span></div>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px">
+    <a href="#book" class="btn-primary" style="white-space:nowrap" onclick="document.getElementById('sticky-bar').classList.remove('visible')"><span data-lang="en">Book now →</span><span data-lang="es">Reservar →</span><span data-lang="ru">Записаться →</span><span data-lang="de">Buchen →</span></a>
+    <button onclick="document.getElementById('sticky-bar').classList.remove('visible')" style="background:none;border:none;font-size:18px;cursor:pointer;color:#6b6b6b;padding:4px">✕</button>
+  </div>
+</div>
+
+
+<!-- COOKIE CONSENT BANNER -->
+<div class="cookie-banner" id="cookie-banner">
+  <p>
+    <span data-lang="en">🍪 We use cookies to improve your experience. By continuing to use PawStay you agree to our <a href="#" onclick="openPolicy('privacy');return false;">Privacy Policy</a>, <a href="#" onclick="openPolicy('terms');return false;">Terms</a> and <a href="#" onclick="openPolicy('cookies');return false;">Cookie Policy</a>. Required by EU/Spanish law (GDPR).</span>
+    <span data-lang="es">🍪 Usamos cookies para mejorar tu experiencia. Al continuar usando PawStay aceptas nuestra <a href="#" onclick="openPolicy('privacy');return false;">Política de Privacidad</a>, <a href="#" onclick="openPolicy('terms');return false;">Términos</a> y <a href="#" onclick="openPolicy('cookies');return false;">Política de Cookies</a>. Requerido por la ley española/UE (RGPD).</span>
+    <span data-lang="ru">🍪 Мы используем файлы cookie. Продолжая использовать PawStay, вы соглашаетесь с <a href="#" onclick="openPolicy('privacy');return false;">Политикой конфиденциальности</a>, <a href="#" onclick="openPolicy('terms');return false;">Условиями</a> и <a href="#" onclick="openPolicy('cookies');return false;">Политикой cookies</a>.</span>
+    <span data-lang="de">🍪 Wir verwenden Cookies. Durch die Nutzung von PawStay stimmst du unserer <a href="#" onclick="openPolicy('privacy');return false;">Datenschutzrichtlinie</a>, <a href="#" onclick="openPolicy('terms');return false;">AGB</a> und <a href="#" onclick="openPolicy('cookies');return false;">Cookie-Richtlinie</a> zu.</span>
+  </p>
+  <div class="cookie-banner-btns">
+    <button class="cookie-accept" onclick="acceptCookies()"><span data-lang="en">Accept all</span><span data-lang="es">Aceptar todo</span><span data-lang="ru">Принять все</span><span data-lang="de">Alle akzeptieren</span></button>
+    <button class="cookie-decline" onclick="declineCookies()"><span data-lang="en">Essential only</span><span data-lang="es">Solo esenciales</span><span data-lang="ru">Только необходимые</span><span data-lang="de">Nur notwendige</span></button>
+  </div>
+</div>
+
+<!-- PRIVACY POLICY MODAL -->
+<div class="policy-overlay" id="policy-privacy" onclick="if(event.target===this)closePolicyModal('policy-privacy')">
+  <div class="policy-modal">
+    <div class="policy-modal-header">
+      <h2><span data-lang="en">Privacy Policy</span><span data-lang="es">Política de Privacidad</span><span data-lang="ru">Политика конфиденциальности</span><span data-lang="de">Datenschutzrichtlinie</span></h2>
+      <button onclick="closePolicyModal('policy-privacy')" style="background:none;border:none;font-size:20px;cursor:pointer;color:#6b6b6b">✕</button>
+    </div>
+    <div class="policy-modal-body">
+      <p><strong><span data-lang="en">Last updated: November 2026</span><span data-lang="es">Última actualización: noviembre 2026</span><span data-lang="ru">Последнее обновление: ноябрь 2026</span><span data-lang="de">Zuletzt aktualisiert: November 2026</span></strong></p>
+      <h3><span data-lang="en">1. Who we are</span><span data-lang="es">1. Quiénes somos</span><span data-lang="ru">1. Кто мы</span><span data-lang="de">1. Wer wir sind</span></h3>
+      <p><span data-lang="en">The data controller is PAW STAY S.L., Avenida Ricardo Soriano, 18, Puerta 24, Marbella (Málaga), Spain. Contact: kkamskaya8@gmail.com. PawStay is a pet sitting marketplace operating in Marbella, Estepona, Mijas and Nueva Andalucía (Costa del Sol, Spain).</span><span data-lang="es">El responsable del tratamiento es PAW STAY S.L., Avenida Ricardo Soriano, 18, Puerta 24, Marbella (Málaga), España. Contacto: kkamskaya8@gmail.com. PawStay es un marketplace de cuidado de mascotas que opera en Marbella, Estepona, Mijas y Nueva Andalucía (Costa del Sol, España).</span><span data-lang="ru">Оператор персональных данных — PAW STAY S.L., Avenida Ricardo Soriano, 18, Puerta 24, Марбелья (Малага), Испания. Контакт: kkamskaya8@gmail.com. PawStay — маркетплейс по уходу за питомцами, работающий в Марбелье, Эстепоне, Михасе и Нуэве-Андалусии (Коста-дель-Соль, Испания).</span><span data-lang="de">Verantwortlicher ist PAW STAY S.L., Avenida Ricardo Soriano, 18, Puerta 24, Marbella (Málaga), Spanien. Kontakt: kkamskaya8@gmail.com. PawStay ist ein Haustierbetreuungs-Marktplatz in Marbella, Estepona, Mijas und Nueva Andalucía (Costa del Sol, Spanien).</span></p>
+      <h3><span data-lang="en">2. What data we collect</span><span data-lang="es">2. Qué datos recopilamos</span><span data-lang="ru">2. Какие данные мы собираем</span><span data-lang="de">2. Welche Daten wir erheben</span></h3>
+      <ul>
+        <li><span data-lang="en">Name, email address and phone number when you submit an enquiry</span><span data-lang="es">Nombre, email y teléfono cuando envías una consulta</span><span data-lang="ru">Имя, email и телефон при отправке запроса</span><span data-lang="de">Name, E-Mail und Telefon bei Anfrage</span></li>
+        <li><span data-lang="en">Pet information (type, name, breed) to match you with the right sitter</span><span data-lang="es">Información de tu mascota para encontrarte el cuidador adecuado</span><span data-lang="ru">Информация о питомце для подбора подходящего ситтера</span><span data-lang="de">Tierinformationen zur Sitterzuordnung</span></li>
+        <li><span data-lang="en">Cookies and usage data (see Cookie Policy)</span><span data-lang="es">Cookies y datos de uso (ver Política de Cookies)</span><span data-lang="ru">Файлы cookie и данные использования (см. Политику cookies)</span><span data-lang="de">Cookies und Nutzungsdaten (siehe Cookie-Richtlinie)</span></li>
+      </ul>
+      <h3><span data-lang="en">3. How we use your data</span><span data-lang="es">3. Cómo usamos tus datos</span><span data-lang="ru">3. Как мы используем ваши данные</span><span data-lang="de">3. Wie wir deine Daten nutzen</span></h3>
+      <ul>
+        <li><span data-lang="en">To match you with available sitters in your area</span><span data-lang="es">Para encontrarte cuidadores disponibles en tu zona</span><span data-lang="ru">Для подбора доступных ситтеров в вашем районе</span><span data-lang="de">Zur Sitterzuordnung in deiner Region</span></li>
+        <li><span data-lang="en">To send booking confirmations and updates</span><span data-lang="es">Para enviar confirmaciones de reserva y actualizaciones</span><span data-lang="ru">Для отправки подтверждений и обновлений</span><span data-lang="de">Für Buchungsbestätigungen und Updates</span></li>
+        <li><span data-lang="en">To improve the platform (anonymised analytics)</span><span data-lang="es">Para mejorar la plataforma (analíticas anonimizadas)</span><span data-lang="ru">Для улучшения платформы (анонимная аналитика)</span><span data-lang="de">Zur Plattformverbesserung (anonymisierte Analytik)</span></li>
+      </ul>
+      <h3><span data-lang="en">4. Your rights (GDPR)</span><span data-lang="es">4. Tus derechos (RGPD)</span><span data-lang="ru">4. Ваши права (GDPR)</span><span data-lang="de">4. Deine Rechte (DSGVO)</span></h3>
+      <p><span data-lang="en">You have the right to access, correct or delete your personal data at any time. Contact us at kkamskaya8@gmail.com to exercise these rights. You can also lodge a complaint with the Spanish Data Protection Agency (aepd.es).</span><span data-lang="es">Tienes derecho a acceder, corregir o eliminar tus datos personales en cualquier momento. Contacta kkamskaya8@gmail.com para ejercer estos derechos. También puedes presentar una reclamación ante la Agencia Española de Protección de Datos (aepd.es).</span><span data-lang="ru">Вы имеете право на доступ, исправление или удаление своих персональных данных. Свяжитесь с нами по kkamskaya8@gmail.com. Вы также вправе подать жалобу в Испанское агентство по защите данных (aepd.es).</span><span data-lang="de">Du hast das Recht auf Zugang, Berichtigung oder Löschung deiner Daten. Kontaktiere uns unter kkamskaya8@gmail.com. Du hast außerdem das Recht, bei der spanischen Datenschutzbehörde (aepd.es) Beschwerde einzulegen.</span></p>
+      <h3><span data-lang="en">5. Data retention</span><span data-lang="es">5. Retención de datos</span><span data-lang="ru">5. Хранение данных</span><span data-lang="de">5. Datenspeicherung</span></h3>
+      <p><span data-lang="en">We retain enquiry data for 2 years. Booking records are kept for 5 years as required by Spanish tax law.</span><span data-lang="es">Conservamos los datos de consulta 2 años. Los registros de reservas se guardan 5 años según la ley fiscal española.</span><span data-lang="ru">Данные запросов хранятся 2 года. Записи о бронировании — 5 лет в соответствии с испанским налоговым законодательством.</span><span data-lang="de">Anfragedaten werden 2 Jahre aufbewahrt. Buchungsunterlagen 5 Jahre gemäß spanischem Steuerrecht.</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- TERMS OF SERVICE MODAL -->
+<div class="policy-overlay" id="policy-terms" onclick="if(event.target===this)closePolicyModal('policy-terms')">
+  <div class="policy-modal">
+    <div class="policy-modal-header">
+      <h2><span data-lang="en">Terms of Service</span><span data-lang="es">Términos de Servicio</span><span data-lang="ru">Условия использования</span><span data-lang="de">Nutzungsbedingungen</span></h2>
+      <button onclick="closePolicyModal('policy-terms')" style="background:none;border:none;font-size:20px;cursor:pointer;color:#6b6b6b">✕</button>
+    </div>
+    <div class="policy-modal-body">
+      <p><strong><span data-lang="en">Last updated: November 2026</span><span data-lang="es">Última actualización: noviembre 2026</span><span data-lang="ru">Последнее обновление: ноябрь 2026</span><span data-lang="de">Zuletzt aktualisiert: November 2026</span></strong></p>
+      <h3><span data-lang="en">1. The platform</span><span data-lang="es">1. La plataforma</span><span data-lang="ru">1. Платформа</span><span data-lang="de">1. Die Plattform</span></h3>
+      <p><span data-lang="en">PawStay, operated by PAW STAY S.L., acts as an intermediary marketplace connecting pet owners with independent pet sitters. We do not directly employ sitters. All sitters are independent service providers.</span><span data-lang="es">PawStay, operada por PAW STAY S.L., actúa como marketplace intermediario que conecta a dueños de mascotas con cuidadores independientes. No empleamos directamente a los cuidadores. Todos los cuidadores son proveedores de servicios independientes.</span><span data-lang="ru">PawStay, которой управляет PAW STAY S.L., выступает посредником и связывает владельцев питомцев с независимыми ситтерами. Мы не являемся работодателем ситтеров. Все ситтеры — независимые поставщики услуг.</span><span data-lang="de">PawStay, betrieben von PAW STAY S.L., fungiert als vermittelnder Marktplatz zwischen Tierbesitzern und unabhängigen Sittern. Wir beschäftigen die Sitter nicht direkt. Alle Sitter sind unabhängige Dienstleister.</span></p>
+      <h3><span data-lang="en">2. Bookings and payment</span><span data-lang="es">2. Reservas y pago</span><span data-lang="ru">2. Бронирование и оплата</span><span data-lang="de">2. Buchungen und Zahlung</span></h3>
+      <p><span data-lang="en">Payment for a booking is arranged with PawStay after the meet & greet. Sitters receive 80% of the booking fee after completion of the service. Cancellations made 48 hours or more before the start of a stay are fully refunded.</span><span data-lang="es">El pago de una reserva se acuerda con PawStay tras el encuentro previo. Los cuidadores reciben el 80% de la tarifa al completar el servicio. Las cancelaciones con 48 horas o más de antelación al inicio de la estancia se reembolsan íntegramente.</span><span data-lang="ru">Оплата бронирования согласуется с PawStay после знакомства. Ситтеры получают 80% стоимости после завершения услуги. Отмена за 48 часов и более до начала визита — полный возврат.</span><span data-lang="de">Die Zahlung für eine Buchung wird nach dem Kennenlernen mit PawStay vereinbart. Sitter erhalten 80 % der Buchungsgebühr nach Abschluss der Leistung. Stornierungen 48 Stunden oder mehr vor Beginn des Aufenthalts werden vollständig erstattet.</span></p>
+      <h3><span data-lang="en">3. Insurance and emergencies</span><span data-lang="es">3. Seguro y emergencias</span><span data-lang="ru">3. Страхование и экстренные случаи</span><span data-lang="de">3. Versicherung und Notfälle</span></h3>
+      <p><span data-lang="en">PawStay does not currently offer an insurance policy covering bookings. Before each stay we agree your vet's details and emergency instructions with you and the sitter. The pet owner is responsible for veterinary costs incurred in an emergency unless agreed otherwise in writing.</span><span data-lang="es">Actualmente PawStay no ofrece una póliza de seguro que cubra las reservas. Antes de cada estancia acordamos contigo y con el cuidador los datos del veterinario y las instrucciones de emergencia. El dueño de la mascota es responsable de los costes veterinarios en caso de emergencia, salvo acuerdo escrito en contrario.</span><span data-lang="ru">В настоящее время PawStay не предлагает страховой полис, покрывающий бронирования. Перед каждым визитом мы согласуем с вами и ситтером контакты ветеринара и инструкции на экстренный случай. Владелец питомца оплачивает ветеринарные расходы в экстренной ситуации, если письменно не согласовано иное.</span><span data-lang="de">PawStay bietet derzeit keine Versicherung an, die Buchungen abdeckt. Vor jedem Aufenthalt klären wir mit dir und dem Sitter die Daten des Tierarztes und die Notfallanweisungen. Der Tierbesitzer trägt die Tierarztkosten im Notfall, sofern nicht schriftlich etwas anderes vereinbart wurde.</span></p>
+      <h3><span data-lang="en">4. User responsibilities</span><span data-lang="es">4. Responsabilidades del usuario</span><span data-lang="ru">4. Ответственность пользователей</span><span data-lang="de">4. Nutzerpflichten</span></h3>
+      <ul>
+        <li><span data-lang="en">Pet owners must provide accurate health and behaviour information about their pet</span><span data-lang="es">Los dueños deben proporcionar información precisa sobre la salud y comportamiento de su mascota</span><span data-lang="ru">Владельцы должны предоставить точную информацию о здоровье и поведении питомца</span><span data-lang="de">Tierbesitzer müssen genaue Gesundheits- und Verhaltensinformationen angeben</span></li>
+        <li><span data-lang="en">Pets must be up to date with vaccinations required by Spanish law</span><span data-lang="es">Las mascotas deben estar al día en las vacunas requeridas por la ley española</span><span data-lang="ru">Питомцы должны иметь актуальные прививки согласно испанскому законодательству</span><span data-lang="de">Tiere müssen nach spanischem Recht aktuelle Impfungen haben</span></li>
+        <li><span data-lang="en">Sitters must maintain the standards set out in the PawStay sitter agreement</span><span data-lang="es">Los cuidadores deben mantener los estándares del acuerdo de cuidadores de PawStay</span><span data-lang="ru">Ситтеры должны соблюдать стандарты, установленные соглашением PawStay</span><span data-lang="de">Sitter müssen die im PawStay-Sittervertrag festgelegten Standards einhalten</span></li>
+      </ul>
+      <h3><span data-lang="en">5. Governing law</span><span data-lang="es">5. Ley aplicable</span><span data-lang="ru">5. Применимое право</span><span data-lang="de">5. Anwendbares Recht</span></h3>
+      <p><span data-lang="en">These terms are governed by Spanish law. Disputes shall be resolved in the courts of Marbella, Málaga, Spain. This does not affect the rights consumers have under mandatory law.</span><span data-lang="es">Estos términos se rigen por la ley española. Las disputas se resolverán en los juzgados de Marbella, Málaga. Esto no afecta a los derechos que la normativa imperativa reconoce a los consumidores.</span><span data-lang="ru">Настоящие условия регулируются испанским законодательством. Споры разрешаются в судах Марбельи, Малага. Это не затрагивает прав потребителей, предусмотренных императивными нормами.</span><span data-lang="de">Diese Bedingungen unterliegen spanischem Recht. Streitigkeiten werden vor den Gerichten in Marbella, Málaga beigelegt. Die zwingenden Verbraucherrechte bleiben unberührt.</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- LEGAL NOTICE MODAL -->
+<div class="policy-overlay" id="policy-legal" onclick="if(event.target===this)closePolicyModal('policy-legal')">
+  <div class="policy-modal">
+    <div class="policy-modal-header">
+      <h2><span data-lang="en">Legal notice</span><span data-lang="es">Aviso legal</span><span data-lang="ru">Правовая информация</span><span data-lang="de">Impressum / Rechtliche Hinweise</span></h2>
+      <button onclick="closePolicyModal('policy-legal')" style="background:none;border:none;font-size:20px;cursor:pointer;color:#6b6b6b" aria-label="Close">✕</button>
+    </div>
+    <div class="policy-modal-body">
+<h3>1. <span data-lang="en">Website owner</span><span data-lang="es">Titular del sitio web</span><span data-lang="ru">Владелец сайта</span><span data-lang="de">Betreiber der Website</span></h3>
+<p><strong><span data-lang="en">Company:</span><span data-lang="es">Denominación social:</span><span data-lang="ru">Наименование:</span><span data-lang="de">Firma:</span></strong> PAW STAY S.L. (<span data-lang="en">single-member limited company</span><span data-lang="es">sociedad limitada unipersonal</span><span data-lang="ru">общество с ограниченной ответственностью с единственным участником</span><span data-lang="de">Einpersonengesellschaft mit beschränkter Haftung</span>)<br><strong><span data-lang="en">Brand and website:</span><span data-lang="es">Marca y sitio web:</span><span data-lang="ru">Бренд и сайт:</span><span data-lang="de">Marke und Website:</span></strong> PawStay · pawstay.es<br><strong><span data-lang="en">Registered office:</span><span data-lang="es">Domicilio social:</span><span data-lang="ru">Юридический адрес:</span><span data-lang="de">Sitz:</span></strong> Avenida Ricardo Soriano, 18, Puerta 24, Marbella (Málaga), <span data-lang="en">Spain</span><span data-lang="es">España</span><span data-lang="ru">Испания</span><span data-lang="de">Spanien</span><br><strong>Email:</strong> kkamskaya8@gmail.com<br><strong>WhatsApp:</strong> +421 908 988 260<br><span id="legal-cif" style="display:none"><strong><span data-lang="en">Tax ID (CIF):</span><span data-lang="es">CIF:</span><span data-lang="ru">CIF (налоговый номер):</span><span data-lang="de">CIF (Steuernummer):</span></strong> <span id="legal-cif-val"></span><br></span><span id="legal-reg" style="display:none"><strong><span data-lang="en">Commercial Register:</span><span data-lang="es">Inscripción registral:</span><span data-lang="ru">Регистрация в торговом реестре:</span><span data-lang="de">Handelsregister:</span></strong> <span id="legal-reg-val"></span><br></span></p>
+<h3>2. <span data-lang="en">Activity</span><span data-lang="es">Actividad</span><span data-lang="ru">Деятельность</span><span data-lang="de">Tätigkeit</span></h3>
+<p><span data-lang="en">PawStay is an online platform that connects pet owners with independent pet sitters and helps them arrange bookings. PAW STAY S.L. acts as an intermediary; the care services themselves are provided by independent sitters.</span><span data-lang="es">PawStay es una plataforma en línea que pone en contacto a dueños de mascotas con cuidadores independientes y facilita la gestión de reservas. PAW STAY S.L. actúa como intermediaria; los servicios de cuidado los prestan cuidadores independientes.</span><span data-lang="ru">PawStay — онлайн-платформа, которая связывает владельцев питомцев с независимыми ситтерами и помогает оформлять бронирования. PAW STAY S.L. выступает посредником; услуги по уходу оказывают независимые ситтеры.</span><span data-lang="de">PawStay ist eine Online-Plattform, die Tierbesitzer mit unabhängigen Sittern zusammenbringt und die Buchung erleichtert. PAW STAY S.L. handelt als Vermittler; die Betreuung selbst erbringen unabhängige Sitter.</span></p>
+<h3>3. <span data-lang="en">Intellectual property</span><span data-lang="es">Propiedad intelectual</span><span data-lang="ru">Интеллектуальная собственность</span><span data-lang="de">Urheberrecht</span></h3>
+<p><span data-lang="en">Unless stated otherwise, the content, design and texts of this website belong to PAW STAY S.L. They may not be copied or reused without written permission.</span><span data-lang="es">Salvo que se indique lo contrario, los contenidos, el diseño y los textos de este sitio web son propiedad de PAW STAY S.L. No pueden copiarse ni reutilizarse sin autorización escrita.</span><span data-lang="ru">Если не указано иное, содержание, дизайн и тексты этого сайта принадлежат PAW STAY S.L. Их нельзя копировать или использовать повторно без письменного разрешения.</span><span data-lang="de">Sofern nicht anders angegeben, sind Inhalte, Gestaltung und Texte dieser Website Eigentum von PAW STAY S.L. Sie dürfen ohne schriftliche Genehmigung nicht kopiert oder weiterverwendet werden.</span></p>
+<h3>4. <span data-lang="en">Liability and links</span><span data-lang="es">Responsabilidad y enlaces</span><span data-lang="ru">Ответственность и ссылки</span><span data-lang="de">Haftung und Links</span></h3>
+<p><span data-lang="en">We try to keep the information on this website accurate and up to date, but we cannot guarantee that it is free of errors. External links are provided for convenience and we are not responsible for their content.</span><span data-lang="es">Procuramos que la información de este sitio sea correcta y esté actualizada, pero no podemos garantizar que esté libre de errores. Los enlaces externos se ofrecen como ayuda y no nos hacemos responsables de su contenido.</span><span data-lang="ru">Мы стараемся, чтобы информация на сайте была точной и актуальной, но не можем гарантировать отсутствие ошибок. Внешние ссылки приведены для удобства, и мы не отвечаем за их содержание.</span><span data-lang="de">Wir bemühen uns um richtige und aktuelle Informationen, können aber Fehlerfreiheit nicht garantieren. Externe Links dienen der Information; für deren Inhalte sind wir nicht verantwortlich.</span></p>
+<h3>5. <span data-lang="en">Applicable law and jurisdiction</span><span data-lang="es">Ley aplicable y jurisdicción</span><span data-lang="ru">Применимое право и юрисдикция</span><span data-lang="de">Anwendbares Recht und Gerichtsstand</span></h3>
+<p><span data-lang="en">This website is governed by Spanish law. Disputes are heard by the courts of Marbella (Málaga), without prejudice to the rights consumers have under mandatory law to bring a case before the courts of their place of residence.</span><span data-lang="es">Este sitio web se rige por la ley española. Las controversias se someterán a los juzgados y tribunales de Marbella (Málaga), sin perjuicio de los derechos que la normativa imperativa reconoce a los consumidores para acudir a los tribunales de su domicilio.</span><span data-lang="ru">Сайт регулируется испанским правом. Споры рассматриваются судами Марбельи (Малага) без ущерба для прав потребителей, предусмотренных императивными нормами, обращаться в суд по месту своего проживания.</span><span data-lang="de">Für diese Website gilt spanisches Recht. Streitigkeiten werden vor den Gerichten in Marbella (Málaga) verhandelt, unbeschadet der zwingenden Rechte von Verbrauchern, ihren Gerichtsstand am Wohnsitz zu nutzen.</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- COOKIE POLICY MODAL -->
+<div class="policy-overlay" id="policy-cookies" onclick="if(event.target===this)closePolicyModal('policy-cookies')">
+  <div class="policy-modal">
+    <div class="policy-modal-header">
+      <h2><span data-lang="en">Cookie Policy</span><span data-lang="es">Política de Cookies</span><span data-lang="ru">Политика cookies</span><span data-lang="de">Cookie-Richtlinie</span></h2>
+      <button onclick="closePolicyModal('policy-cookies')" style="background:none;border:none;font-size:20px;cursor:pointer;color:#6b6b6b">✕</button>
+    </div>
+    <div class="policy-modal-body">
+      <p><span data-lang="en">PawStay uses cookies to make the website work and to understand how visitors use it.</span><span data-lang="es">PawStay usa cookies para que el sitio funcione y para entender cómo lo usan los visitantes.</span><span data-lang="ru">PawStay использует файлы cookie для работы сайта и анализа его использования.</span><span data-lang="de">PawStay verwendet Cookies damit die Website funktioniert und um zu verstehen wie Besucher sie nutzen.</span></p>
+      <h3><span data-lang="en">Essential cookies (always active)</span><span data-lang="es">Cookies esenciales (siempre activas)</span><span data-lang="ru">Необходимые cookies (всегда активны)</span><span data-lang="de">Notwendige Cookies (immer aktiv)</span></h3>
+      <ul>
+        <li><span data-lang="en">Language preference — remembers your chosen language</span><span data-lang="es">Preferencia de idioma — recuerda tu idioma seleccionado</span><span data-lang="ru">Языковые предпочтения — запоминает выбранный язык</span><span data-lang="de">Sprachpräferenz — merkt sich deine gewählte Sprache</span></li>
+        <li><span data-lang="en">Cookie consent — stores your cookie preferences</span><span data-lang="es">Consentimiento de cookies — guarda tus preferencias de cookies</span><span data-lang="ru">Согласие на cookies — сохраняет ваши предпочтения</span><span data-lang="de">Cookie-Einwilligung — speichert deine Cookie-Einstellungen</span></li>
+      </ul>
+      <h3><span data-lang="en">Analytics cookies (with consent)</span><span data-lang="es">Cookies analíticas (con consentimiento)</span><span data-lang="ru">Аналитические cookies (с согласия)</span><span data-lang="de">Analyse-Cookies (mit Einwilligung)</span></h3>
+      <ul>
+        <li><span data-lang="en">Google Analytics — helps us understand visitor behaviour (anonymised)</span><span data-lang="es">Google Analytics — nos ayuda a entender el comportamiento de los visitantes (anonimizado)</span><span data-lang="ru">Google Analytics — помогает понять поведение посетителей (анонимно)</span><span data-lang="de">Google Analytics — hilft uns das Besucherverhalten zu verstehen (anonymisiert)</span></li>
+      </ul>
+      <p><span data-lang="en">You can change your cookie preferences at any time by clearing your browser cookies and revisiting the site.</span><span data-lang="es">Puedes cambiar tus preferencias de cookies en cualquier momento borrando las cookies del navegador y volviendo al sitio.</span><span data-lang="ru">Вы можете изменить настройки cookies в любое время, очистив cookies браузера и повторно посетив сайт.</span><span data-lang="de">Du kannst deine Cookie-Einstellungen jederzeit ändern indem du Browser-Cookies löschst und die Seite erneut besuchst.</span></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
